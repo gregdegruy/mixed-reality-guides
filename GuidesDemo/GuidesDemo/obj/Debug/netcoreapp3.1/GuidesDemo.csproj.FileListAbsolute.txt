@@ -1,0 +1,5 @@
+D:\grego\GitHub\_greg\guides-entity-temp\GuidesDemo\GuidesDemo\bin\Debug\netcoreapp3.1\GuidesDemo.deps.json
+D:\grego\GitHub\_greg\guides-entity-temp\GuidesDemo\GuidesDemo\bin\Debug\netcoreapp3.1\GuidesDemo.dll
+D:\grego\GitHub\_greg\guides-entity-temp\GuidesDemo\GuidesDemo\obj\Debug\netcoreapp3.1\GuidesDemo.csprojAssemblyReference.cache
+D:\grego\GitHub\_greg\guides-entity-temp\GuidesDemo\GuidesDemo\obj\Debug\netcoreapp3.1\GuidesDemo.AssemblyInfoInputs.cache
+D:\grego\GitHub\_greg\guides-entity-temp\GuidesDemo\GuidesDemo\obj\Debug\netcoreapp3.1\GuidesDemo.AssemblyInfo.cs
