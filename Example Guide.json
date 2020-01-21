@@ -1,0 +1,2119 @@
+{
+    "Schema": "GuidesV3",
+    "Guide": {
+        "Id": "827dddce-5a51-4553-b5ed-b1b4b56c8904",
+        "Type": "Microsoft.Guides.Schema.IGuide",
+        "Name": "Example Guide",
+        "Tasks": [{
+            "Id": "5c5d0c0c-a8e2-4b79-80d5-6c609dc445ba",
+            "Type": "Microsoft.Guides.Schema.IGuideTask",
+            "Name": "Welcome to Guides!",
+            "Steps": [{
+                "Id": "eef1148d-b675-4066-99ed-1af4510a6751",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "In this guide you will learn about:\n1. The step card\n2. The tether\n3. Some basic features\n4. Using 3D objects\n5. Customizing 3D objects\n6. Tips on creating good guides",
+                "Tether": {
+                    "Id": "6f1b84ff-3bc3-493f-ae6f-2c739cb73546",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [0.0, 0.0, 0.0],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [null],
+                "PartTemplates": [null, null, null, null],
+                "StepMode": 0
+            }, {
+                "Id": "16deaab1-2b12-425e-bf26-5d11ed7ef1d4",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "You can always navigate back to a previous step at any time by gazing at the back arrow, but let's move forward.\n\nNavigate to the next step.",
+                "Tether": {
+                    "Id": "6b19186f-2def-42f8-a162-4acdf1b54d8a",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-0.15, 0.0, -0.025],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [],
+                "PartTemplates": [null, null],
+                "StepMode": 0
+            }, {
+                "Id": "14cd5e77-ff3d-4f78-9f35-de179c24927a",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "Guides has two modes. Operate and Author.\nOperate mode is for experiencing a guide that  has already been created.\nAuthor mode is for adding and customizing holograms on the steps of a guide.",
+                "Tether": {
+                    "Id": "3220e55e-642d-40e9-a10b-83c993f8c368",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [0.0, 0.0, 0.0],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [],
+                "PartTemplates": [],
+                "StepMode": 0
+            }]
+        }, {
+            "Id": "84b04517-128c-4f0f-b360-f1385f097765",
+            "Type": "Microsoft.Guides.Schema.IGuideTask",
+            "Name": "What is the step card?",
+            "Steps": [{
+                "Id": "5c0bae80-b327-4001-9eee-8b522d1cf77d",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "What you're looking at right now is called the step card.\n\nYour instruction text is displayed here. ",
+                "Tether": {
+                    "Id": "45379cc4-7ff1-4eb6-9607-b223add2a741",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [0.0, 0.0, 0.0],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [null],
+                "PartTemplates": [null],
+                "StepMode": 0
+            }, {
+                "Id": "4d7d6c0e-5f27-4d54-b15d-260953919b31",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "Sometimes instruction text isn't enough. The media panel on the left can show an image.\n\nImages are great for reference or validation.",
+                "Tether": {
+                    "Id": "d2c1452f-4a3f-41ae-b7fb-5a83f0130549",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-0.15, 0.0, -0.025],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [{
+                    "Id": "e440ac99-5385-4024-980a-2a528ad22ccd",
+                    "Type": "Microsoft.Guides.Schema.IImageInstance",
+                    "AssetId": "4afce670-ada9-e911-a988-000d3af49637"
+                }],
+                "PartTemplates": [null],
+                "StepMode": 0
+            }, {
+                "Id": "1a0f9685-0829-4ef7-8866-645f133e7ba8",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "The media panel can also play videos.\nVideos are great for steps when a specific technique or procedure is required.\nGaze at the play button on the media panel to watch the video.",
+                "Tether": {
+                    "Id": "c74084f1-998f-4895-aab2-ef853113d36f",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [0.0, 0.0, 0.0],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [{
+                    "Id": "55a8d40e-752a-4781-a79b-024f0d9178fb",
+                    "Type": "Microsoft.Guides.Schema.IVideoInstance",
+                    "AssetId": "41049475-7eb5-e911-a811-000d3af464f8"
+                }],
+                "PartTemplates": [null],
+                "StepMode": 0
+            }, {
+                "Id": "09bc8a82-6be2-4e50-8513-deec3acb1a84",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "The step card intuitively follows you as you're doing work.\n\nTry turning around and waiting for 2 seconds until you see the step card appear.",
+                "Tether": {
+                    "Id": "d9c8a732-b2a3-490e-b99b-8a0f47217f11",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [0.0, 0.0, 0.0],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [null],
+                "PartTemplates": [null],
+                "StepMode": 0
+            }, {
+                "Id": "fcd7e59e-2cff-4d22-b8be-12dfa526ca54",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "That's the basics of the step card.\n\nNow let's get to know the tether...",
+                "Tether": {
+                    "Id": "26f009f1-8d19-4e99-be42-d281cdf1589c",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [0.0, 0.0, 0.0],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [],
+                "PartTemplates": [null],
+                "StepMode": 0
+            }]
+        }, {
+            "Id": "5e098e67-f3aa-4ff5-8248-01e8ff8f766e",
+            "Type": "Microsoft.Guides.Schema.IGuideTask",
+            "Name": "What Is The Tether?",
+            "Steps": [{
+                "Id": "fd4c888f-e3ac-4d4c-bb36-1c7691752e8d",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "The tether is the dotted line coming from the bottom of the step card.\n\nIt connects your instructional text to your 3D content.\n\nLook down and follow the dotted line to the example machine.",
+                "Tether": {
+                    "Id": "8b693b54-ccdc-4d0e-8fe7-54b055468d0e",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [0.111959375, 0.246812657, -0.259852737],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 1
+                },
+                "Media": [],
+                "PartTemplates": [null, {
+                    "Id": "d6e215ec-1ee9-4d57-87ca-95e3eb938b6c",
+                    "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                    "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                    "PartInstances": [null, null, null, null, null, {
+                            "Id": "6a52b7d1-9968-41dc-93a3-d687260233b3",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                "Scale": [0.8291521, 0.8291521, 0.8291521]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        },
+                        null, null
+                    ]
+                }],
+                "StepMode": 0
+            }, {
+                "Id": "9843c53a-e7c1-412e-883f-5f35f8a7299d",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "In this step, the tether has been placed at a specific location on the example machine to indicate where work should occur.\n\nPlacing the tether helps instructions remain focused.",
+                "Tether": {
+                    "Id": "889aab4a-3f3d-4569-863c-cefd80733773",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-0.171974078, 0.2882093, -0.2113457],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 1
+                },
+                "Media": [],
+                "PartTemplates": [null, {
+                    "Id": "2ef0d81f-332e-4093-aead-3992f2ca7e7f",
+                    "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                    "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                    "PartInstances": [null, null, null, null, null, {
+                            "Id": "7e474676-1ecb-4245-a636-08f106428c27",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                "Scale": [0.8291521, 0.8291521, 0.8291521]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        },
+                        null, null
+                    ]
+                }, {
+                    "Id": "f57e1c38-4375-4bda-b25c-f91aee0a0015",
+                    "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                    "AssetId": "a6a8557f-ebdd-e811-a94e-000d3a37fb59",
+                    "PartInstances": []
+                }],
+                "StepMode": 0
+            }, {
+                "Id": "8b64c837-bac5-4223-8968-73a355538859",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "The tether can also be used to show you where an item is located or where to go.\n\nFollow the dotted line to the wrench.",
+                "Tether": {
+                    "Id": "9acb6b22-d6c1-46e7-a844-4a6085728ac6",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-1.3512404, 0.257050842, 0.467110753],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 1
+                },
+                "Media": [],
+                "PartTemplates": [{
+                        "Id": "2a8553d5-825a-438d-966c-6ee45c632608",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "8d856ff1-abb3-e911-a812-000d3af46b49",
+                        "PartInstances": [{
+                            "Id": "e9bc9e31-5cda-44ac-b92e-a1c3ac6fe71d",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "8d856ff1-abb3-e911-a812-000d3af46b49",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [-1.35221112, 0.219832972, 0.4820119],
+                                "Rotation": [0.0073718247, -0.139379, -0.0103169065, 0.990158141],
+                                "Scale": [1.0, 1.0, 1.0]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    }, {
+                        "Id": "9839c3a5-d557-4c57-9fc8-79576319e559",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "70126adb-6e34-4e88-bdab-dfa6852c2e8a",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    },
+                    null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "19a66227-d3dc-442e-966f-da9e53d9db22",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "That's it for the tether.\n\nNext are a few more useful features you should be aware of...",
+                "Tether": {
+                    "Id": "45efc741-5e14-4d81-a0e0-09a9c6572efe",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-0.15, 0.0, -0.025],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [],
+                "PartTemplates": [null, {
+                        "Id": "0eac31c5-9e35-4750-8dd1-ff559a3c3c60",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "ab5d54fb-fa16-4673-85f5-98ecfc3bf880",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    },
+                    null
+                ],
+                "StepMode": 0
+            }]
+        }, {
+            "Id": "c2f4e9a1-5f04-4e51-b5e7-343214e49782",
+            "Type": "Microsoft.Guides.Schema.IGuideTask",
+            "Name": "Features To Know",
+            "Steps": [{
+                "Id": "5e4f8c20-6eb6-4526-aaaf-334a29c98827",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "OUTLINE\nUse Outline to quickly navigate to any step.",
+                "Tether": {
+                    "Id": "a58ef15f-40ef-47a5-a701-5f5db77d9266",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-0.15, 0.0, -0.025],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [{
+                    "Id": "4663926c-e706-4491-8867-c37941efa22b",
+                    "Type": "Microsoft.Guides.Schema.IImageInstance",
+                    "AssetId": "e844f6ec-f5a7-e911-a98d-000d3af49373"
+                }],
+                "PartTemplates": [null, {
+                        "Id": "e07f352d-eca0-4f63-bd4c-e17175bfa19f",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "ec54f506-550f-47c8-aea0-7060f7eccc5f",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    },
+                    null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "1b979aa0-d211-47ff-9c68-54e25711ebdb",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "The guide outline will show you all the tasks in the current guide.\nYou can expand tasks to navigate to specific steps.",
+                "Tether": {
+                    "Id": "6a62b737-ec8a-458c-9e6f-20d09a5d4fb5",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-0.15, 0.0, -0.025],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [{
+                    "Id": "feb1cfb9-251b-482f-ad49-066d04bf07ad",
+                    "Type": "Microsoft.Guides.Schema.IImageInstance",
+                    "AssetId": "82bc6549-6bb5-e911-a811-000d3af46cc5"
+                }],
+                "PartTemplates": [null, {
+                        "Id": "c767a838-af4e-462f-8d2a-946d6cdfce3f",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "14073cd4-8f6d-46d7-8183-74add37586e1",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    },
+                    null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "709038cc-dcf9-49dd-ad13-848042bdf560",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "HOLOGRAM VISIBILITY\nOnce you know what a hologram is telling you it can be helpful to hide them.\nTry toggling the example machine's visibility on and off with the toggle holograms button.",
+                "Tether": {
+                    "Id": "b6aeeead-c3e5-42ce-a49b-15aeae217d9c",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-0.00456379354, 0.223918825, -0.194030315],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 1
+                },
+                "Media": [{
+                    "Id": "41efa374-ddcc-4427-85f2-e619cfe97bcc",
+                    "Type": "Microsoft.Guides.Schema.IImageInstance",
+                    "AssetId": "3d68fbdc-19b3-e911-a812-000d3af46489"
+                }],
+                "PartTemplates": [null, {
+                        "Id": "fb9b69c0-e866-4afe-8f92-3e8e2632c7e4",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "1d1ea72e-eb6e-4fd2-a95d-e1269efb61f8",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    },
+                    null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "c9328870-b5fb-4bd5-a7a2-33c92fc31717",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "ANCHORING\nHolograms should always be properly placed.\nIf the green border around your marker appears misaligned activate the anchor button to realign.",
+                "Tether": {
+                    "Id": "b8433d80-c242-4ea9-8f30-eb1884d0347c",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-0.15, 0.0, -0.025],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [{
+                    "Id": "627944e7-9528-41eb-bd0e-145e7a46e34d",
+                    "Type": "Microsoft.Guides.Schema.IImageInstance",
+                    "AssetId": "79d93ffc-f7a7-e911-a983-000d3af49c44"
+                }],
+                "PartTemplates": [null, {
+                        "Id": "a0617f3d-d0d6-4ce3-9164-aff51f9726f5",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "38cc42c4-4eb2-4071-8e40-28a7189f75f8",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    },
+                    null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "bf43b93e-0129-4c00-8488-6db93da4e43e",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "SAVE, UNDO, REDO\nIn Author mode, there are 3 unique buttons above the step card that allow authors to save, undo and redo changes.\nThese buttons are not available in Operate mode.",
+                "Tether": {
+                    "Id": "21933a40-4227-47a6-a8e8-1676750f34ce",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-0.15, 0.0, -0.025],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [{
+                    "Id": "7d9ced17-7f83-4c21-8ef8-9c60c4dd0b2f",
+                    "Type": "Microsoft.Guides.Schema.IImageInstance",
+                    "AssetId": "b19db7d0-faa7-e911-a98d-000d3af49373"
+                }],
+                "PartTemplates": [null, {
+                        "Id": "faaa0721-0219-4c7d-a7cc-d61fd18b8d23",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "e787362c-f913-4a2c-be0e-192c3f10c3f0",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    },
+                    null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "5732b23c-c3ac-4975-a4eb-ba4137ecbbe7",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "That's all the features you need to know!\n\nLet's learn about using 3D objects...",
+                "Tether": {
+                    "Id": "03188d00-00a0-4f9f-9d82-e66947c34dde",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-0.15, 0.0, -0.025],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [null],
+                "PartTemplates": [null, {
+                        "Id": "79c4d72f-1887-4311-9461-9249df898de0",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "81d6875b-cdce-48ae-8385-8dca019c76a9",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    },
+                    null
+                ],
+                "StepMode": 0
+            }]
+        }, {
+            "Id": "bfb0fc1a-1001-4025-8016-b96de6a35a78",
+            "Type": "Microsoft.Guides.Schema.IGuideTask",
+            "Name": "3D Content",
+            "Steps": [{
+                "Id": "ae6ae43e-3891-4c5e-932e-c547a7dcc418",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "Guides comes with a 3D toolkit of objects so you can start building your own guides right away.\n\nFollow the tether to see just a few of the objects that are available to you.",
+                "Tether": {
+                    "Id": "f7aa7850-9d05-48ec-a3a8-add9aecda98f",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-0.005752351, 0.000177260488, -5.401671E-08],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [1.00000048, 1.0, 1.00000048]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "1186af5d-1dec-4ce5-aa64-7266a1cfe3e5",
+                    "AttachedTo": 2
+                },
+                "Media": [null],
+                "PartTemplates": [null, {
+                    "Id": "7438bcd4-54ee-4eaf-ad66-d3f739e042e3",
+                    "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                    "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                    "PartInstances": [null, null, null, null, null, {
+                            "Id": "74fa2877-cf0e-46d2-aad0-ed04f5a00157",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                "Scale": [0.8291521, 0.8291521, 0.8291521]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        },
+                        null, null
+                    ]
+                }, {
+                    "Id": "719a2421-ac8d-4ebe-8d12-9af6d3067c6a",
+                    "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                    "AssetId": "18a9557f-ebdd-e811-a94e-000d3a37fb59",
+                    "PartInstances": [{
+                        "Id": "1186af5d-1dec-4ce5-aa64-7266a1cfe3e5",
+                        "Type": "Microsoft.Guides.Schema.IPartInstance",
+                        "AssetId": "18a9557f-ebdd-e811-a94e-000d3a37fb59",
+                        "RenderMode": 0,
+                        "Transform": {
+                            "Position": [0.2813009, 0.3473127, -0.113487631],
+                            "Rotation": [0.0139490357, -0.002639817, -0.009278323, 0.9998562],
+                            "Scale": [1.46641541, 1.46641541, 1.46641541]
+                        },
+                        "IsPlacedInWorld": true,
+                        "DisableAnimation": false
+                    }]
+                }, {
+                    "Id": "5fea46f0-aa61-4d63-af7c-1be291319521",
+                    "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                    "AssetId": "e7a8557f-ebdd-e811-a94e-000d3a37fb59",
+                    "PartInstances": [{
+                        "Id": "d23a7029-b9d2-49d1-b7a0-8cb6e54b9655",
+                        "Type": "Microsoft.Guides.Schema.IPartInstance",
+                        "AssetId": "e7a8557f-ebdd-e811-a94e-000d3a37fb59",
+                        "RenderMode": 0,
+                        "Transform": {
+                            "Position": [0.131708235, 0.3536484, -0.104925707],
+                            "Rotation": [0.2821794, -0.3225607, -0.552184939, 0.715137362],
+                            "Scale": [0.5162585, 0.5162585, 0.5162585]
+                        },
+                        "IsPlacedInWorld": true,
+                        "DisableAnimation": false
+                    }]
+                }, {
+                    "Id": "08bbfed8-41b9-44c3-95e1-9a91ac7016ff",
+                    "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                    "AssetId": "8d5b5179-ebdd-e811-a94e-000d3a37fb59",
+                    "PartInstances": [{
+                        "Id": "088be1b9-fa3e-4db3-a265-9e175dcb5970",
+                        "Type": "Microsoft.Guides.Schema.IPartInstance",
+                        "AssetId": "8d5b5179-ebdd-e811-a94e-000d3a37fb59",
+                        "RenderMode": 0,
+                        "Transform": {
+                            "Position": [-0.0298953727, 0.362196, -0.07481031],
+                            "Rotation": [-0.0325556621, -0.0044625774, -0.0105197346, 0.9994047],
+                            "Scale": [0.7678035, 0.7678035, 0.7678035]
+                        },
+                        "IsPlacedInWorld": true,
+                        "DisableAnimation": false
+                    }]
+                }, {
+                    "Id": "173448b4-0ae8-4fe7-bc3f-f172df0850e5",
+                    "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                    "AssetId": "f3a8557f-ebdd-e811-a94e-000d3a37fb59",
+                    "PartInstances": [{
+                        "Id": "39ed92c8-f8e0-4ddc-8927-385684428807",
+                        "Type": "Microsoft.Guides.Schema.IPartInstance",
+                        "AssetId": "f3a8557f-ebdd-e811-a94e-000d3a37fb59",
+                        "RenderMode": 0,
+                        "Transform": {
+                            "Position": [-0.150228545, 0.369969815, -0.0753608346],
+                            "Rotation": [0.0136490092, -0.0116908466, -0.009131055, 0.999796867],
+                            "Scale": [2.28581715, 2.28581715, 2.28581715]
+                        },
+                        "IsPlacedInWorld": true,
+                        "DisableAnimation": false
+                    }]
+                }, {
+                    "Id": "99b3bc53-75d9-4d3c-8c95-24ca0b63a6cc",
+                    "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                    "AssetId": "15a9557f-ebdd-e811-a94e-000d3a37fb59",
+                    "PartInstances": [{
+                        "Id": "426e146c-5751-4221-996d-62ce81604f6e",
+                        "Type": "Microsoft.Guides.Schema.IPartInstance",
+                        "AssetId": "15a9557f-ebdd-e811-a94e-000d3a37fb59",
+                        "RenderMode": 0,
+                        "Transform": {
+                            "Position": [-0.252274722, 0.367486417, -0.07938384],
+                            "Rotation": [0.0134715885, -0.0308410041, -0.009390843, 0.99938947],
+                            "Scale": [1.0, 1.0, 1.0]
+                        },
+                        "IsPlacedInWorld": true,
+                        "DisableAnimation": false
+                    }]
+                }],
+                "StepMode": 0
+            }, {
+                "Id": "f0dd13f1-ed73-4f6a-90f3-3b328dd919b5",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "Arrows are great for pointing to specific parts or to indicate a direction.\n\nPick from a variety of different sizes and shapes to fit any scenario.",
+                "Tether": {
+                    "Id": "4eab9cf5-20fc-413d-9836-0ee95dc27e56",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [1.49011612E-08, 1.49011612E-08, -2.65426934E-08],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "a5adb60c-c69e-40ff-8ef3-b950cb5cfdd9",
+                    "AttachedTo": 2
+                },
+                "Media": [null],
+                "PartTemplates": [null, {
+                        "Id": "13dc744c-3521-43e7-bf30-3b3679aa423c",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "7dd7d9b8-1452-4f53-ab8d-f9faeaaf90c9",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    }, {
+                        "Id": "de6a9192-524c-411c-98e9-7564c6197966",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7d5b5179-ebdd-e811-a94e-000d3a37fb59",
+                        "PartInstances": [{
+                            "Id": "9c75d3a0-6687-4f8c-b764-4fdd4ddb168e",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "7d5b5179-ebdd-e811-a94e-000d3a37fb59",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [0.227918744, 0.17012991, -0.2564698],
+                                "Rotation": [-0.368583441, 0.6075104, -0.551293969, -0.437209785],
+                                "Scale": [1.0, 1.0, 1.0]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    }, {
+                        "Id": "82119af8-f934-428a-8749-c66ed700dedf",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "655b5179-ebdd-e811-a94e-000d3a37fb59",
+                        "PartInstances": [{
+                            "Id": "d1aaf929-b455-4145-8057-343d4b28d55b",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "655b5179-ebdd-e811-a94e-000d3a37fb59",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [-0.0907844156, 0.227831274, -0.101453722],
+                                "Rotation": [0.00718739536, -0.00636161864, -0.0246991385, 0.9996489],
+                                "Scale": [1.334674, 1.334674, 1.334674]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    },
+                    null, {
+                        "Id": "ef1eb4cf-1604-42b7-afd7-23a33aeebcf6",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "8d5b5179-ebdd-e811-a94e-000d3a37fb59",
+                        "PartInstances": [{
+                            "Id": "a5adb60c-c69e-40ff-8ef3-b950cb5cfdd9",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "8d5b5179-ebdd-e811-a94e-000d3a37fb59",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [0.110009879, 0.288025618, -0.118225023],
+                                "Rotation": [-0.06315693, -0.08235778, 0.6980027, 0.70853436],
+                                "Scale": [0.52436465, 0.52436465, 0.52436465]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    },
+                    null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "f77e99b6-9358-438f-b057-d51a773d0b11",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "EXAMPLE: ARROWS\n\n\"This is where the power button is located.\"",
+                "Tether": {
+                    "Id": "ccef9b45-5a1b-4989-8f58-d6a0f135ae87",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [7.4505806E-08, -3.16649675E-08, 1.67638063E-08],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "50a94f1f-043a-4d41-906e-0cc0322194b5",
+                    "AttachedTo": 2
+                },
+                "Media": [null],
+                "PartTemplates": [null, {
+                        "Id": "067a059d-71a8-45a5-89c8-cab5f72721a8",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "339cc93c-f000-4411-a74f-70a3137465a9",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    }, {
+                        "Id": "4bf7b088-42ff-493c-860a-42b03cc2baf0",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "905b5179-ebdd-e811-a94e-000d3a37fb59",
+                        "PartInstances": [{
+                            "Id": "50a94f1f-043a-4d41-906e-0cc0322194b5",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "905b5179-ebdd-e811-a94e-000d3a37fb59",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [-0.2536428, 0.323582083, -0.151924729],
+                                "Rotation": [0.0250589252, 0.9996127, 0.007910907, -0.009169575],
+                                "Scale": [1.29843819, 1.29843819, 1.29843819]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    },
+                    null, null, null, null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "6e64729b-39d9-487a-be99-148bb5cba803",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "Use Hands from the 3D toolkit when you need to show an operator how to use their hand in a specific way.",
+                "Tether": {
+                    "Id": "8b60df10-d5b8-4fda-89a2-6e1109f84a89",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [0.3385658, 0.24838303, -0.008792162],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 1
+                },
+                "Media": [null],
+                "PartTemplates": [null, {
+                        "Id": "95bef6cd-4838-4225-a7ea-43cbd20a962d",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "c943717c-4f4c-4576-a979-51980c9ecd08",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    }, {
+                        "Id": "50078475-9ed5-4f5c-a57c-8539a57d8716",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "c1a8557f-ebdd-e811-a94e-000d3a37fb59",
+                        "PartInstances": [{
+                            "Id": "f6daa336-4c9f-41eb-90ff-03d7b13a7e22",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "c1a8557f-ebdd-e811-a94e-000d3a37fb59",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [0.0274630152, 0.195859089, 0.005211018],
+                                "Rotation": [0.21805951, 0.204420775, -0.163755372, 0.940131068],
+                                "Scale": [0.7218526, 0.7218526, 0.7218526]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    }, {
+                        "Id": "ecfb8fe1-2d45-4053-ac60-9d2d845dd4b3",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "cda8557f-ebdd-e811-a94e-000d3a37fb59",
+                        "PartInstances": [{
+                            "Id": "e1bd9d70-86ab-4e59-9fd6-b1b57fd6763d",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "cda8557f-ebdd-e811-a94e-000d3a37fb59",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [-0.21819675, 0.168259189, -0.0211504325],
+                                "Rotation": [-0.005688295, -0.497920871, -0.0248921141, 0.8668466],
+                                "Scale": [0.6440089, 0.6440089, 0.6440089]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    }, {
+                        "Id": "285200d2-86c8-4781-b781-92421aec4a9c",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "e7a8557f-ebdd-e811-a94e-000d3a37fb59",
+                        "PartInstances": [{
+                            "Id": "be4ce895-a501-4fbf-9c67-484113094e2e",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "e7a8557f-ebdd-e811-a94e-000d3a37fb59",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [0.236767083, 0.194262251, -0.0172231942],
+                                "Rotation": [-0.677522063, 0.2626331, -0.211034089, 0.653798461],
+                                "Scale": [0.6597255, 0.6597255, 0.6597255]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    },
+                    null, null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "0dd1c286-bc58-4899-8585-a81f54110da4",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "EXAMPLE: HANDS\n\n\"Push this button to turn on the example machine.\"",
+                "Tether": {
+                    "Id": "504765f8-161b-478c-a39c-ec5f039f27c7",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-7.4505806E-08, -7.450581E-09, 4.47034836E-08],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "3f97c42d-ad53-4bd9-810d-2b3d1e1bdcda",
+                    "AttachedTo": 2
+                },
+                "Media": [null],
+                "PartTemplates": [null, {
+                        "Id": "35960d91-032a-4798-bf8d-bf6024fc3f09",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "23c1736b-41e3-40d7-9860-17b991fc1499",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    }, {
+                        "Id": "c1a66b48-9b54-42aa-86ed-8d2a939b3a3c",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "eba8557f-ebdd-e811-a94e-000d3a37fb59",
+                        "PartInstances": [{
+                            "Id": "3f97c42d-ad53-4bd9-810d-2b3d1e1bdcda",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "eba8557f-ebdd-e811-a94e-000d3a37fb59",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [-0.331491441, 0.29091242, -0.187553287],
+                                "Rotation": [-0.0299005937, -0.6265511, -0.00506302, 0.7787903],
+                                "Scale": [0.8875846, 0.8875846, 0.8875846]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    },
+                    null, null, null, null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "6db8042e-b0b8-42ba-b2d9-93bb6afb642a",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "Use Zones from the 3D toolkit to indicate an area of interest.",
+                "Tether": {
+                    "Id": "c3745f63-1447-405b-92e9-32f6f6a8dae8",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [0.112914324, 0.281211048, -0.1289891],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 1
+                },
+                "Media": [null],
+                "PartTemplates": [null, {
+                        "Id": "00a78fa9-663d-4ffe-8d88-1d147671f15a",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "91b32370-4448-4e0d-b681-ddb558c5b230",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    }, {
+                        "Id": "d3f093e7-1666-452a-a015-bf7823827291",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "9d7a5585-ebdd-e811-a94e-000d3a37fb59",
+                        "PartInstances": [{
+                            "Id": "0d1b384b-b959-4d41-8168-f2ed0c4404dc",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "9d7a5585-ebdd-e811-a94e-000d3a37fb59",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [0.109535128, 0.230377734, -0.124296322],
+                                "Rotation": [0.6723629, -0.139153212, -0.170829549, 0.706669569],
+                                "Scale": [1.83913672, 1.83913672, 1.83913672]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    },
+                    null, null, null, null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "de5ce5a3-2958-4381-ae72-c37ac17b5758",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "EXAMPLE: ZONES\n\n\"Don't put anything in this area\"",
+                "Tether": {
+                    "Id": "f2718104-0c7d-4019-b734-c1c452fbfa3a",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [1.49011612E-08, 9.313226E-10, -2.5331974E-07],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "6263b7b9-9627-4a17-89b0-6ecb0ca366b7",
+                    "AttachedTo": 2
+                },
+                "Media": [null],
+                "PartTemplates": [null, {
+                        "Id": "92385c2a-e19f-4b10-b6e3-3da66d520fae",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "7e471ae9-08e7-4bac-a518-9ef739ad0adf",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    }, {
+                        "Id": "7caa66ea-20ae-47f9-8d21-2a3822e3483e",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "bd7a5585-ebdd-e811-a94e-000d3a37fb59",
+                        "PartInstances": [{
+                            "Id": "6263b7b9-9627-4a17-89b0-6ecb0ca366b7",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "bd7a5585-ebdd-e811-a94e-000d3a37fb59",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [0.11214526, 0.2400103, -0.117737785],
+                                "Rotation": [0.7063412, -0.0167943779, -0.0379404873, 0.7066546],
+                                "Scale": [1.19483984, 1.19483984, 1.19483984]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    },
+                    null, null, null, null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "471ee1b4-d998-45b8-badc-151f10ace051",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "Animated 3D objects add another layer of detail to the instructions.\n\nBe thoughtful about how you combine 3D objects so the instructions remain clear.",
+                "Tether": {
+                    "Id": "b82e2afc-adfe-4e5b-8d1c-4790b7d3832a",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [1.63912773E-07, -0.00694055343, -1.937151E-07],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "26d7a78d-7aa6-49b9-8f30-c7fb4aea3d3e",
+                    "AttachedTo": 2
+                },
+                "Media": [null],
+                "PartTemplates": [null, {
+                    "Id": "88a3d75a-8f5b-486e-9724-838115fe7627",
+                    "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                    "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                    "PartInstances": [null, null, null, null, null, {
+                            "Id": "7608b98e-1a98-458d-b174-ff5f953a03dc",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                "Scale": [0.8291521, 0.8291521, 0.8291521]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        },
+                        null, null
+                    ]
+                }, {
+                    "Id": "524623b7-9b5a-4be5-a42e-8e57127c3d83",
+                    "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                    "AssetId": "27a9557f-ebdd-e811-a94e-000d3a37fb59",
+                    "PartInstances": [{
+                        "Id": "e1113502-e9ad-48e9-a0c4-89b2f90a3e80",
+                        "Type": "Microsoft.Guides.Schema.IPartInstance",
+                        "AssetId": "27a9557f-ebdd-e811-a94e-000d3a37fb59",
+                        "RenderMode": 0,
+                        "Transform": {
+                            "Position": [-0.219998837, 0.115535423, -0.183031142],
+                            "Rotation": [-0.012163341, -0.7009089, -0.0222522914, 0.712799966],
+                            "Scale": [1.0, 1.0, 1.0]
+                        },
+                        "IsPlacedInWorld": true,
+                        "DisableAnimation": false
+                    }]
+                }, {
+                    "Id": "c6515f5e-4b36-4f98-aee6-a5ed70e5fd86",
+                    "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                    "AssetId": "a87a5585-ebdd-e811-a94e-000d3a37fb59",
+                    "PartInstances": [{
+                        "Id": "d4798494-ecf8-4131-a2fc-b858b0206818",
+                        "Type": "Microsoft.Guides.Schema.IPartInstance",
+                        "AssetId": "a87a5585-ebdd-e811-a94e-000d3a37fb59",
+                        "RenderMode": 0,
+                        "Transform": {
+                            "Position": [-0.0912743062, 0.224955782, -0.08912368],
+                            "Rotation": [0.0101633687, 0.0141899921, -0.999562, -0.0238999855],
+                            "Scale": [1.51985574, 1.51985574, 1.51985574]
+                        },
+                        "IsPlacedInWorld": true,
+                        "DisableAnimation": false
+                    }]
+                }, {
+                    "Id": "ddc8830d-8117-4e42-a4d3-a66a2c2018f5",
+                    "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                    "AssetId": "ab7a5585-ebdd-e811-a94e-000d3a37fb59",
+                    "PartInstances": [{
+                        "Id": "67c44d41-93eb-42f3-8c2f-65998145aaa2",
+                        "Type": "Microsoft.Guides.Schema.IPartInstance",
+                        "AssetId": "ab7a5585-ebdd-e811-a94e-000d3a37fb59",
+                        "RenderMode": 0,
+                        "Transform": {
+                            "Position": [0.107346818, 0.2332341, -0.113238037],
+                            "Rotation": [0.6929434, -0.082910575, -0.08707442, 0.7108962],
+                            "Scale": [2.22217822, 2.22217822, 2.22217822]
+                        },
+                        "IsPlacedInWorld": true,
+                        "DisableAnimation": false
+                    }]
+                }, {
+                    "Id": "25ff082f-62f4-49d1-8f9c-d13234b20a27",
+                    "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                    "AssetId": "da7a5585-ebdd-e811-a94e-000d3a37fb59",
+                    "PartInstances": [{
+                        "Id": "26d7a78d-7aa6-49b9-8f30-c7fb4aea3d3e",
+                        "Type": "Microsoft.Guides.Schema.IPartInstance",
+                        "AssetId": "da7a5585-ebdd-e811-a94e-000d3a37fb59",
+                        "RenderMode": 0,
+                        "Transform": {
+                            "Position": [-0.09384634, 0.361616969, -0.184511781],
+                            "Rotation": [0.007254173, 0.0200349241, -0.0244525727, 0.999474],
+                            "Scale": [1.0, 1.0, 1.0]
+                        },
+                        "IsPlacedInWorld": true,
+                        "DisableAnimation": false
+                    }]
+                }, {
+                    "Id": "08901c37-64a3-4faa-b0cc-a7f0ccfedf3b",
+                    "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                    "AssetId": "c77a5585-ebdd-e811-a94e-000d3a37fb59",
+                    "PartInstances": []
+                }],
+                "StepMode": 0
+            }, {
+                "Id": "87126ebe-487c-4cd2-bcaa-88d707191e23",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "EXAMPLE: ANIMATION\n\n\"Connect the air hose here.\"",
+                "Tether": {
+                    "Id": "2917213e-5616-4a99-aaa8-9f86b7b5cf96",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-0.306872845, 0.108266711, -0.188213468],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 1
+                },
+                "Media": [null],
+                "PartTemplates": [null, {
+                        "Id": "5672af23-3541-47cb-aa4b-d44bf3588706",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "c2fdff7c-0b43-449c-916d-2db49fbe6173",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    }, {
+                        "Id": "baddcbe2-de0e-44bf-8303-83fb2cb4ddea",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "27a9557f-ebdd-e811-a94e-000d3a37fb59",
+                        "PartInstances": [{
+                            "Id": "380f107e-6bf5-4101-b635-e5070ab8469a",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "27a9557f-ebdd-e811-a94e-000d3a37fb59",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [-0.224748537, 0.11216715, -0.183750659],
+                                "Rotation": [-0.485614926, -0.499729574, 0.484705269, 0.5286865],
+                                "Scale": [1.59164643, 1.59164643, 1.59164643]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    },
+                    null, null, null, null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "195d38ba-3b21-425c-be4d-1aafc7b846b5",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "Use custom 3D parts to provide operators with specific instructions or representations of your own products.\n\nYou can use the PC application to import your own custom 3D parts.",
+                "Tether": {
+                    "Id": "742066ba-bc5b-4096-a4af-376031af3d14",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [0.200603217, 0.353327423, -0.0423996672],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "1a6f0e2c-2386-44a0-b6c5-8d6dbfebf416",
+                    "AttachedTo": 2
+                },
+                "Media": [null],
+                "PartTemplates": [{
+                        "Id": "0ea0955d-ea2c-4811-93e2-2aeb55d12019",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                        "PartInstances": [{
+                            "Id": "1a6f0e2c-2386-44a0-b6c5-8d6dbfebf416",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                            "RenderMode": 5,
+                            "Transform": {
+                                "Position": [0.045461718, -0.00114198821, -0.201428682],
+                                "Rotation": [0.01067958, -0.00517830858, -0.0176062211, 0.9997746],
+                                "Scale": [1.0, 1.0, 1.0]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    }, {
+                        "Id": "ec17552c-bc71-4818-be21-db49eb39bf22",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "3efe4eb2-bd6a-4aab-b39d-b020178fc0aa",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    }, {
+                        "Id": "8898e197-0a72-49ba-b1dc-b1fd512917ce",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "27a9557f-ebdd-e811-a94e-000d3a37fb59",
+                        "PartInstances": [null]
+                    },
+                    null, null, null, null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "93c663f0-93e6-4693-9c41-054f87a455b0",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "EXAMPLE: CUSTOM 3D PART\n\n\"Install this part in here.\"",
+                "Tether": {
+                    "Id": "4ba52893-26e2-4d44-906d-d3855c6b6903",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [0.200603217, 0.353327423, -0.0423996672],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "1da163f1-2f38-4530-91a0-3e2d69577d0d",
+                    "AttachedTo": 2
+                },
+                "Media": [null],
+                "PartTemplates": [{
+                        "Id": "c836cec8-7f77-4d22-afbb-5f86e3d287ee",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                        "PartInstances": [{
+                            "Id": "1da163f1-2f38-4530-91a0-3e2d69577d0d",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                            "RenderMode": 5,
+                            "Transform": {
+                                "Position": [0.045461718, -0.00114198821, -0.201428682],
+                                "Rotation": [0.01067958, -0.00517830858, -0.0176062211, 0.9997746],
+                                "Scale": [1.0, 1.0, 1.0]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    }, {
+                        "Id": "aa77ea2f-8265-4b55-aff7-d1db22eb0711",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "073ab818-973a-4e4b-af99-de59e4a8d7ef",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    }, {
+                        "Id": "6f86c4da-6cd7-47b9-b52e-3735683aa186",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "27a9557f-ebdd-e811-a94e-000d3a37fb59",
+                        "PartInstances": [{
+                            "Id": "5d118473-be98-44f7-a140-5ff18e55bfdc",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "27a9557f-ebdd-e811-a94e-000d3a37fb59",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [0.1557926, 0.269483656, -0.217830241],
+                                "Rotation": [-0.133025512, -0.6757797, -0.5228342, -0.502265334],
+                                "Scale": [1.49233329, 1.49233329, 1.49233329]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    },
+                    null, null, null, null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "6d341204-a6a4-404e-8de5-a03bec8ac100",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "Having the 3D toolkit to enhance step instructions is very helpful.\n\nLet's find out how we can customize objects from the 3D toolkit to make steps even better...",
+                "Tether": {
+                    "Id": "872f2cec-592d-4786-982e-b7fc3064b7bc",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-0.15, 0.0, -0.025],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [null],
+                "PartTemplates": [{
+                        "Id": "2ce8d60c-7d34-41ed-98f6-7265c60743fa",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                        "PartInstances": [{
+                            "Id": "0c5f29d1-97ca-4925-8415-11536f6026f5",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                            "RenderMode": 5,
+                            "Transform": {
+                                "Position": [-0.0363013446, -0.05941646, -0.174910873],
+                                "Rotation": [0.01067958, -0.00517830858, -0.0176062211, 0.9997746],
+                                "Scale": [1.0, 1.0, 1.0]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    }, {
+                        "Id": "8f30a7fa-430d-4d24-b796-14d09f45713a",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "4404cb0d-77e0-41c6-91b4-1ac405bce795",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    },
+                    null, null, null, null, null
+                ],
+                "StepMode": 0
+            }]
+        }, {
+            "Id": "39b9478a-4665-4c7d-8e65-9e4255a360f1",
+            "Type": "Microsoft.Guides.Schema.IGuideTask",
+            "Name": "Customizing 3D Content",
+            "Steps": [{
+                "Id": "f4334662-db17-4a13-bc63-7e8174012cf4",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "Any hologram can have different styles, be resized and combined with other holograms to reinforce your instructions.\n\nLet's look at a few examples...",
+                "Tether": {
+                    "Id": "b98ad913-8e54-488c-882d-5cc9ada5c95f",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-0.15, 0.0, -0.025],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [null],
+                "PartTemplates": [{
+                        "Id": "2d003c70-b1de-47aa-84bd-f961f9be6e1d",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                        "PartInstances": [{
+                            "Id": "cf5e546c-76f1-4b88-97dc-6c2dd631b386",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                            "RenderMode": 5,
+                            "Transform": {
+                                "Position": [-0.0363013446, -0.05941646, -0.174910873],
+                                "Rotation": [0.01067958, -0.00517830858, -0.0176062211, 0.9997746],
+                                "Scale": [1.0, 1.0, 1.0]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    }, {
+                        "Id": "fc093ee8-a964-4f38-8d52-d1d2ed9ea846",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "c62080a2-5c5e-410f-9812-68571d1ea880",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    },
+                    null, null, null, null, null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "7afa68b2-5c2e-4913-9e71-3ab45572640e",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "Here the \"avoid\" style has been applied to a 3D part to communicate that you need to be cautious near it.\n\nChoosing another style included in Guides could communicate something different.",
+                "Tether": {
+                    "Id": "4223de03-a2cf-42cb-98ee-a8255f4c6970",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [0.200603247, 0.353327453, -0.0423997045],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "f9c43f0b-12d0-496d-a49c-3978701ea067",
+                    "AttachedTo": 2
+                },
+                "Media": [null],
+                "PartTemplates": [{
+                        "Id": "f74ced99-1ea8-4a62-be01-44b5d65b18f6",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                        "PartInstances": [{
+                            "Id": "f9c43f0b-12d0-496d-a49c-3978701ea067",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                            "RenderMode": 6,
+                            "Transform": {
+                                "Position": [0.0110735372, 0.0255154148, -0.109430671],
+                                "Rotation": [0.01067958, -0.00517830858, -0.0176062211, 0.9997746],
+                                "Scale": [1.0, 1.0, 1.0]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }, {
+                            "Id": "ee86787c-7d6c-4d83-9a09-64bff3788f33",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                            "RenderMode": 3,
+                            "Transform": {
+                                "Position": [-0.201137051, 0.03997862, -0.119505033],
+                                "Rotation": [0.01067958, -0.00517830858, -0.0176062211, 0.9997746],
+                                "Scale": [1.0, 1.0, 1.0]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }, {
+                            "Id": "189f5af3-cbab-4965-b421-ca354230ca44",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                            "RenderMode": 7,
+                            "Transform": {
+                                "Position": [-0.4229155, 0.0502453335, -0.139795154],
+                                "Rotation": [0.01067958, -0.00517830858, -0.0176062211, 0.9997746],
+                                "Scale": [1.0, 1.0, 1.0]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    }, {
+                        "Id": "d8481aab-bc80-49bc-a8e4-948e9df1a821",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "03607e66-8afe-469a-869c-a325d642a634",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    },
+                    null, null, null, null, null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "b22afe38-72e1-4aff-9ff3-011916e58a28",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "Furthermore, any 3D part can be resized.\n\nThis step uses only one rectangular zone from the 3D Toolkit to highlight three different sized areas on the example machine.",
+                "Tether": {
+                    "Id": "5f4e06b8-7f7b-4fb6-aedc-037ff1f3144f",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [2.98023224E-08, 2.8871E-08, 2.98023224E-08],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "94537578-d7bc-46d9-b550-905b639006eb",
+                    "AttachedTo": 2
+                },
+                "Media": [null],
+                "PartTemplates": [{
+                        "Id": "cee904e2-c694-433d-8609-c7c68f162489",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                        "PartInstances": [{
+                            "Id": "1c668a4b-0d00-40b5-b36a-1da6f57a3c3e",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [-0.0363013446, -0.05941646, -0.174910873],
+                                "Rotation": [0.01067958, -0.00517830858, -0.0176062211, 0.9997746],
+                                "Scale": [1.0, 1.0, 1.0]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    }, {
+                        "Id": "65d010ba-ae6c-403e-8697-083010bffcb4",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "20b4cecc-cd37-4e4e-ac40-2b76a882a73d",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    }, {
+                        "Id": "e39a488f-3135-45f4-a6af-0be3ff744158",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "bd7a5585-ebdd-e811-a94e-000d3a37fb59",
+                        "PartInstances": [{
+                            "Id": "94537578-d7bc-46d9-b550-905b639006eb",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "bd7a5585-ebdd-e811-a94e-000d3a37fb59",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [-0.09095064, 0.338106275, -0.1804017],
+                                "Rotation": [-0.0122848824, -0.6987548, -0.0224734433, 0.7149029],
+                                "Scale": [1.4111917, 1.4111917, 1.4111917]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }, {
+                            "Id": "223f949b-fe3c-48ed-abc4-e1dedecc6d76",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "bd7a5585-ebdd-e811-a94e-000d3a37fb59",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [0.110793091, 0.23933284, -0.104737237],
+                                "Rotation": [-0.0231151134, -0.706860065, -0.706824243, -0.0146397138],
+                                "Scale": [0.544712, 0.544712, 0.544712]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }, {
+                            "Id": "0252d773-e6c3-45ef-9036-b7b78f888b8e",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "bd7a5585-ebdd-e811-a94e-000d3a37fb59",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [-0.004808381, 0.03153582, -0.200175554],
+                                "Rotation": [-0.0110371215, -0.999896169, -0.008434102, 0.00386949256],
+                                "Scale": [3.212147, 3.212147, 3.212147]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    },
+                    null, null, null, null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "89f58566-acd3-4367-a431-7c590b7d45ef",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "Now you know how easy it is to use and customize 3D content!\n\nNext we will summarize some top tips for making good guides...",
+                "Tether": {
+                    "Id": "b8b105f8-1fbc-40d1-a746-bbc90f46cad9",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-0.15, 0.0, -0.025],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [null],
+                "PartTemplates": [{
+                        "Id": "eca3b741-7972-4dd5-b8cf-dea3814a45a5",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                        "PartInstances": [{
+                            "Id": "b51e7b47-c66b-4c3e-9da6-ee0ac710f54e",
+                            "Type": "Microsoft.Guides.Schema.IPartInstance",
+                            "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                            "RenderMode": 0,
+                            "Transform": {
+                                "Position": [-0.0363013446, -0.05941646, -0.174910873],
+                                "Rotation": [0.01067958, -0.00517830858, -0.0176062211, 0.9997746],
+                                "Scale": [1.0, 1.0, 1.0]
+                            },
+                            "IsPlacedInWorld": true,
+                            "DisableAnimation": false
+                        }]
+                    }, {
+                        "Id": "e9dc256d-e423-45e9-915b-2b4b550d99c5",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, {
+                                "Id": "d19612db-f010-4cf7-bb08-03bbc0aad3e1",
+                                "Type": "Microsoft.Guides.Schema.IPartInstance",
+                                "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                                "RenderMode": 0,
+                                "Transform": {
+                                    "Position": [-0.006908506, -0.00323522254, -0.19211328],
+                                    "Rotation": [0.0106572751, 0.00186689687, -0.0170564931, 0.999796033],
+                                    "Scale": [0.8291521, 0.8291521, 0.8291521]
+                                },
+                                "IsPlacedInWorld": true,
+                                "DisableAnimation": false
+                            },
+                            null, null
+                        ]
+                    },
+                    null, null, null, null, null
+                ],
+                "StepMode": 0
+            }]
+        }, {
+            "Id": "1d34b44b-b5e2-4be3-aea5-10d1efefaa80",
+            "Type": "Microsoft.Guides.Schema.IGuideTask",
+            "Name": "Authoring Tips and Tricks",
+            "Steps": [{
+                "Id": "bca4dd86-502a-48ab-a1ee-d06a6e31f102",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "You can use Guides for many purposes by adding 3D objects and then customizing them.\n\nHowever, having too many 3D objects on one step can overwhelm an operator.",
+                "Tether": {
+                    "Id": "8056d88f-4163-41fa-8488-5a6fad86ab6a",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-0.15, 0.0, -0.025],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [null],
+                "PartTemplates": [{
+                        "Id": "93271512-68d3-42d5-8f71-94eadf6dd8dd",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                        "PartInstances": [null]
+                    }, {
+                        "Id": "18495054-0dc6-4b15-b4f0-66913129729e",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, null, null, null]
+                    },
+                    null, null, null, null, null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "823eae49-a3bd-44d4-9ff2-f4b956cb5be0",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "Keep your steps short!\n\nBreakdown procedures into small, easily understood steps that are clear and concise.\n\nDon't be afraid to make more steps.",
+                "Tether": {
+                    "Id": "79972842-5cf2-42fb-9a60-d24d7aa2fb7e",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-0.15, 0.0, -0.025],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [null],
+                "PartTemplates": [{
+                        "Id": "31a8d373-1065-4a8f-94c8-578056662dca",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                        "PartInstances": [null]
+                    }, {
+                        "Id": "f6c2e8eb-58bd-415b-8b34-22a640145de2",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, null, null, null]
+                    },
+                    null, null, null, null, null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "2f46fc7d-39ac-4256-a47e-30cce3cf94cb",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "The tether is a great way to draw attention to an area or an object but it isn't required on every step.\n\nUse the tether if it makes sense to do so.",
+                "Tether": {
+                    "Id": "29cc5672-6be4-4977-a613-716824c2165b",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-0.15, 0.0, -0.025],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [null],
+                "PartTemplates": [{
+                        "Id": "8b22abc7-731d-42f0-92c2-bbe1535e08bf",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                        "PartInstances": [null]
+                    }, {
+                        "Id": "23ffc543-d101-45b6-8c11-7c4a7e41c0f1",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, null, null, null]
+                    },
+                    null, null, null, null, null
+                ],
+                "StepMode": 0
+            }, {
+                "Id": "d6d3c2c6-05c0-4bea-af24-229584999f4c",
+                "Type": "Microsoft.Guides.Schema.IGuideStep",
+                "InstructionText": "That's it for authoring tips.\n\nHave fun and experiment to see what works best for you in your guides!",
+                "Tether": {
+                    "Id": "53d101ec-5070-410f-afc7-39cd29af71fe",
+                    "Type": "Microsoft.Guides.Schema.ITether",
+                    "AssetId": "00000000-0000-0000-0000-000000000000",
+                    "RenderMode": 0,
+                    "Transform": {
+                        "Position": [-0.15, 0.0, -0.025],
+                        "Rotation": [0.0, 0.0, 0.0, 0.0],
+                        "Scale": [0.0, 0.0, 0.0]
+                    },
+                    "IsPlacedInWorld": false,
+                    "DisableAnimation": false,
+                    "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                    "AttachedTo": 0
+                },
+                "Media": [null],
+                "PartTemplates": [{
+                        "Id": "c6c48406-b275-4e88-b943-f06a0bf4f777",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "c6afe1c7-efb2-e911-a812-000d3af46489",
+                        "PartInstances": [null]
+                    }, {
+                        "Id": "8dadd3e2-1163-4bef-88d8-8ca194d114a3",
+                        "Type": "Microsoft.Guides.Schema.IPartTemplate",
+                        "AssetId": "7e3944f6-7fb2-e911-a812-000d3af46cc5",
+                        "PartInstances": [null, null, null, null, null, null, null, null]
+                    },
+                    null, null, null, null, null
+                ],
+                "StepMode": 0
+            }]
+        }],
+        "AlignmentStep": {
+            "Id": "fb7b43ad-6b08-42c5-a882-23b6b14b63f4",
+            "Type": "Microsoft.Guides.Schema.IAlignment",
+            "InstructionText": "To align HoloLens to the printed anchor:\n\n1. Select 'Scan' button to begin alignment\n2. Stand 2-feet from the printed anchor\n3. Look at the printed anchor",
+            "Tether": {
+                "Id": "08b3c0d5-8262-4b42-92fd-e2f231f15c0c",
+                "Type": "Microsoft.Guides.Schema.ITether",
+                "AssetId": "00000000-0000-0000-0000-000000000000",
+                "RenderMode": 0,
+                "Transform": {
+                    "Position": [0.0, 0.0, 0.0],
+                    "Rotation": [0.0, 0.0, 0.0, 0.0],
+                    "Scale": [0.0, 0.0, 0.0]
+                },
+                "IsPlacedInWorld": false,
+                "DisableAnimation": false,
+                "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                "AttachedTo": 3
+            },
+            "Media": [{
+                "Id": "e679835e-533b-45ec-b936-e5056d6cd499",
+                "Type": "Microsoft.Guides.Schema.IImageInstance",
+                "AssetId": "3305f4c0-75b5-e911-a811-000d3af46b49"
+            }],
+            "DigitalTwin": null,
+            "StepMode": 1,
+            "AlignmentModelType": 1
+        },
+        "CompletionStep": {
+            "Id": "6a8608a3-6bc9-4b5f-8b3a-9e71d06da948",
+            "Type": "Microsoft.Guides.Schema.IGuideStep",
+            "InstructionText": "This concludes the Example Guide.\n\nNow go make your own!",
+            "Tether": {
+                "Id": "ce3f82d9-a8e4-49d1-ab7e-4bb21725aede",
+                "Type": "Microsoft.Guides.Schema.ITether",
+                "AssetId": "00000000-0000-0000-0000-000000000000",
+                "RenderMode": 0,
+                "Transform": {
+                    "Position": [0.0, 0.0, 0.0],
+                    "Rotation": [0.0, 0.0, 0.0, 0.0],
+                    "Scale": [0.0, 0.0, 0.0]
+                },
+                "IsPlacedInWorld": false,
+                "DisableAnimation": false,
+                "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+                "AttachedTo": 0
+            },
+            "Media": [],
+            "PartTemplates": [],
+            "StepMode": 0
+        }
+    }
+}
