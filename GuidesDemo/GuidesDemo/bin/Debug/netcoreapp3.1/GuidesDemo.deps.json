@@ -7,8 +7,25 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "GuidesDemo/1.0.0": {
+        "dependencies": {
+          "Microsoft.CodeQuality.Analyzers": "2.9.8",
+          "Microsoft.CrmSdk.CoreAssemblies": "9.0.2.22"
+        },
         "runtime": {
           "GuidesDemo.dll": {}
+        }
+      },
+      "Microsoft.CodeQuality.Analyzers/2.9.8": {},
+      "Microsoft.CrmSdk.CoreAssemblies/9.0.2.22": {
+        "runtime": {
+          "lib/net462/Microsoft.Crm.Sdk.Proxy.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.43.1020"
+          },
+          "lib/net462/Microsoft.Xrm.Sdk.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.43.1020"
+          }
         }
       }
     }
@@ -18,6 +35,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.CodeQuality.Analyzers/2.9.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KevAiJKuolGKK84jDHMVGJjBAigH/86xyCVtbOzh5avUYzW7jPErdJW708byKKMiVKTwv027mbKCNnnOgNQHsA==",
+      "path": "microsoft.codequality.analyzers/2.9.8",
+      "hashPath": "microsoft.codequality.analyzers.2.9.8.nupkg.sha512"
+    },
+    "Microsoft.CrmSdk.CoreAssemblies/9.0.2.22": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pP6eYPfchNVKbro/88wN0m6Sc+zBtCIzEpFIUZmm6j4eWznR4HlK4iKp43hahSASKn6dw+edrf3cOBdf5cSDSg==",
+      "path": "microsoft.crmsdk.coreassemblies/9.0.2.22",
+      "hashPath": "microsoft.crmsdk.coreassemblies.9.0.2.22.nupkg.sha512"
     }
   }
 }
