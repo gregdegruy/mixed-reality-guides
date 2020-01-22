@@ -1,5 +1,6 @@
 using Microsoft.Xrm.Sdk;
 using System;
+using System.ServiceModel;
 
 namespace RevTwoGuidesPlugin
 {
@@ -25,7 +26,7 @@ namespace RevTwoGuidesPlugin
             }
 
             IPluginExecutionContext context = localPluginContext.PluginExecutionContext;
-
+             
             // Check for the entity on which the plugin would be registered
             if (context.InputParameters.Contains("Target") && context.InputParameters["Target"] is Entity)
             {
@@ -53,8 +54,8 @@ namespace RevTwoGuidesPlugin
                             new EntityReference(regardingobjectidType, regardingobjectid);
                         }
 
-                        tracingService.Trace("FollowupPlugin: Creating the task activity.");
-                        organizationService.Create(followup);
+                        localPluginContext.Trace("FollowupPlugin: Creating the task activity.");
+                        localPluginContext.CurrentUserService.Create(followup);
                     }
 
                     catch (FaultException<OrganizationServiceFault> ex)
@@ -64,7 +65,7 @@ namespace RevTwoGuidesPlugin
 
                     catch (Exception ex)
                     {
-                        tracingService.Trace("FollowUpPlugin: {0}", ex.ToString());
+                        localPluginContext.Trace("FollowUpPlugin: " + ex.ToString());
                         throw;
                     }
                 }
