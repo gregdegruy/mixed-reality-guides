@@ -49,10 +49,7 @@ namespace RevTwoGuidesPlugin
             }
         }
 
-        protected virtual void ExecuteCdsPlugin(ILocalPluginContext localPluginContext)
-        {
-            // Do nothing. 
-        }
+        protected virtual void ExecuteCdsPlugin(ILocalPluginContext localPluginContext) { }
     }
 
      /*
