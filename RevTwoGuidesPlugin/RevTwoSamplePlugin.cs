@@ -27,7 +27,6 @@ namespace RevTwoGuidesPlugin
 
             IPluginExecutionContext context = localPluginContext.PluginExecutionContext;
              
-            // Check for the entity on which the plugin would be registered
             if (context.InputParameters.Contains("Target") && context.InputParameters["Target"] is Entity)
             {
                 Entity entity = (Entity)context.InputParameters["Target"];
