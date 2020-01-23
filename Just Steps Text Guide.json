@@ -11,7 +11,7 @@
             "Steps": [{
                 "Id": "879b78f1-ebad-46ad-82f1-eb6363a3a817",
                 "Type": "Microsoft.Guides.Schema.IGuideStep",
-                "InstructionText": "This is step 1 of all my tasks",
+                "InstructionText": "This is step 3 of all my tasks 三こガイドおねがします。",
                 "Tether": {
                     "Id": "3fef234d-36b9-41d7-b6ce-3aeb5e09e1e6",
                     "Type": "Microsoft.Guides.Schema.ITether",
