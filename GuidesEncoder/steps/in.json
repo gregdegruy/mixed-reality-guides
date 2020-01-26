@@ -13,7 +13,7 @@
           {
             "Id": "879b78f1-ebad-46ad-82f1-eb6363a3a817",
             "Type": "Microsoft.Guides.Schema.IGuideStep",
-            "InstructionText": "This is step All day baby of all my tasks",
+            "InstructionText": "A Custom step",
             "Tether": {
               "Id": "3fef234d-36b9-41d7-b6ce-3aeb5e09e1e6",
               "Type": "Microsoft.Guides.Schema.ITether",
@@ -43,10 +43,10 @@
               "AttachedTo": 0
             },
             "Media": [
-              
+              null
             ],
             "PartTemplates": [
-              
+              null
             ],
             "StepMode": 0
           }
@@ -130,10 +130,10 @@
         "AttachedTo": 0
       },
       "Media": [
-        
+        null
       ],
       "PartTemplates": [
-        
+        null
       ],
       "StepMode": 0
     }

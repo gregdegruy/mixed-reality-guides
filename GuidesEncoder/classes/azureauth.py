@@ -3,7 +3,6 @@
 from .config import *
 
 class AzureAuth:
-    hdd = ""
     bearerToken = ""
 
     def __init__(self):

@@ -6,8 +6,6 @@ import platform
 from .azureauth import AzureAuth
 
 class DynamicsGuides:
-    hdd = ""
-
     def __init__(self):
         pass
 
@@ -18,7 +16,7 @@ class DynamicsGuides:
             "Authorization": "Bearer " + token_response["accessToken"]
         }
 
-        response = requests.request("GET", url, headers=headers, data = payload)
+        response = requests.request("GET", url, headers=headers, data=payload)
 
         print(response.text.encode("utf8"))
 
@@ -26,6 +24,7 @@ class DynamicsGuides:
         sampleDiagnosis = "https://beta.revtwo.com/session/L9X26twMg3cRTBnvmPkq4KVJbWNCHj?navcode=5cGZd3fFhz"
         domStepClass = "stepbox-frame"
         guideFilePath = ""
+        encoded = ""
         if platform.system() == "Windows":
             guideFilePath = os.getcwd() + "\\GuidesEncoder\\steps\\in.json"
         elif platform.system() == "Linux":
@@ -35,3 +34,6 @@ class DynamicsGuides:
             datastr = json.dumps(data)
             encoded = base64.b64encode(datastr.encode("utf-8"))
             print("done")
+        f = open(os.getcwd() + "\\GuidesEncoder\\steps\\out.txt", "w")
+        f.write(encoded.decode("utf-8"))
+        f.close()
