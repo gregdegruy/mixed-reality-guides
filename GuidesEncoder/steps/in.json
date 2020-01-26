@@ -100,7 +100,7 @@
     "CompletionStep": {
       "Id": "42492eb2-3bb3-4f6d-956f-8b17a9c5816d",
       "Type": "Microsoft.Guides.Schema.IGuideStep",
-      "InstructionText": "Congratulations! You ARE REALLY CUSTOM successfully completed this guide.",
+      "InstructionText": "Congratulations! A winner is you.",
       "Tether": {
         "Id": "436404ae-9e2e-4836-acf2-d26e2e3e5577",
         "Type": "Microsoft.Guides.Schema.ITether",
