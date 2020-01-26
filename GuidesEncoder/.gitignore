@@ -1,0 +1,9 @@
+.vscode/launch.json
+.vscode/settings.json
+classes/*.pyc
+classes/test/*.pyc
+classes/__pycache__/*.pyc
+env/
+info.sys
+__pycache__
+.pytest_cache
