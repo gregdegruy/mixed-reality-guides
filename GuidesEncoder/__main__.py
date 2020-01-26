@@ -1,15 +1,18 @@
 import base64
 import json
 import os
+import platform
+
+from adal import AuthenticationContext
 
 from classes import AzureAuth
 
 if __name__ == "__main__":
     stepsJsonPath = ""
     if platform.system() == "Windows":
-        stepsJsonPath = os.getcwd() + "\\GuidesEncoder\\steps\\in.json"
+        stepsJsonPath = os.getcwd() + "\\steps\\in.json"
     elif platform.system() == "Linux":
-        stepsJsonPath = os.getcwd() + "/GuidesEncoder/steps/in.json"
+        stepsJsonPath = os.getcwd() + "/steps/in.json"
     with open(stepsJsonPath, encoding="utf8") as jsonfile:
         data = json.load(jsonfile)
         datastr = json.dumps(data)

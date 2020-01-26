@@ -24,18 +24,25 @@ A helper to generate Guides from a URL.
 
 Open a terminal as an admin.
 
-Setup python3 virtual env or source an existing.
+Setup python3 virtual env or source an existing on your os.
 ```python
 sudo apt-get update
 pip install virtualenv
-python3 -m venv env
-source env/bin/activate
+python3 -m venv linux 
+source env/linux/bin/activate 
+```
+
+```python
+pip install virtualenv
+python -m venv .win
+env\.win\Scripts\activate.bat
 ```
 
 Pull dependencies.
 ```bash
 pip install -r requirements.txt
 python __main__.py
+```
 
 Give me a url.
 

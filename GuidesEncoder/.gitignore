@@ -3,6 +3,8 @@ classes/*.pyc
 classes/test/*.pyc
 classes/__pycache__/*.pyc
 config.json
-env/
+env/*
+!env/.win/requirements.txt
+!env/linux/requirements.txt
 info.sys
 .pytest_cache

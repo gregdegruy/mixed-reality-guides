@@ -1,9 +1,9 @@
-﻿# import adal
-import json
+﻿import json
 import logging
 import os
 import platform
 import sys
+
 
 class AzureAuth:
     hdd = ""
@@ -19,5 +19,9 @@ class AzureAuth:
         print(self.path)
 
     def readConfig():
+        # with open(os.getcwd() + "\\GuidesEncoder\\steps\\in.json", encoding="utf8") as jsonfile:
+        #     data = json.load(jsonfile)
+        #     datastr = json.dumps(data)
+        #     encoded = base64.b64encode(datastr.encode("utf-8"))
         print("done")
         
