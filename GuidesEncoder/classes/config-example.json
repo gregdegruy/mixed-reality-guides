@@ -1,8 +1,0 @@
-{
-    "resource": "YOUR_RESOURCE",
-    "tenant" : "YOUR_SUB_DOMAIN.onmicrosoft.com",
-    "authorityHostUrl" : "https://login.microsoftonline.com",
-    "clientId" : "YOUR_CLIENTID",
-    "clientSecret" : "YOUR_CLIENTSECRET"
-}
- 
