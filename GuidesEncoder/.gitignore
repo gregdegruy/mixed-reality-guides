@@ -1,4 +1,3 @@
-.vscode/
 classes/*.pyc
 classes/test/*.pyc
 classes/__pycache__/*.pyc
