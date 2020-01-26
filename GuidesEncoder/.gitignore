@@ -1,7 +1,8 @@
+__pycache__
 classes/*.pyc
 classes/test/*.pyc
 classes/__pycache__/*.pyc
+config.json
 env/
 info.sys
-__pycache__
 .pytest_cache

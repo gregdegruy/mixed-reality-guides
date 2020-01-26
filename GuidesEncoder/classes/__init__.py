@@ -1,3 +1,3 @@
 """Guides Python API"""
 
-from .az import AzureAuth
+from .azure-auth import AzureAuth
