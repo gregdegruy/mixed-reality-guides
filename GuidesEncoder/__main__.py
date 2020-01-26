@@ -5,7 +5,12 @@ import os
 from classes import AzureAuth
 
 if __name__ == "__main__":
-    with open(os.getcwd() + "\\GuidesEncoder\\steps\\in.json", encoding="utf8") as jsonfile:
+    stepsJsonPath = ""
+    if platform.system() == "Windows":
+        stepsJsonPath = os.getcwd() + "\\GuidesEncoder\\steps\\in.json"
+    elif platform.system() == "Linux":
+        stepsJsonPath = os.getcwd() + "/GuidesEncoder/steps/in.json"
+    with open(stepsJsonPath, encoding="utf8") as jsonfile:
         data = json.load(jsonfile)
         datastr = json.dumps(data)
         encoded = base64.b64encode(datastr.encode("utf-8"))
