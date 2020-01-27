@@ -6,9 +6,11 @@ import uuid
 
 from .azureauth import AzureAuth
 from .config import *
-from .dynamicsmsmrwguidestask import DynamicsMSMRWGuideTask
+from .msmrwguidealignmentstep import MSMRWGuideAlignmentStep
+from .msmrwguidecompletionstep import MSMRWGuideCompletionStep
+from .msmrwguidetask import MSMRWGuideTask
 
-class DynamicsMSMRWGuide:
+class MSMRWGuide:
     annotationId = ""
     guideId = ""
     guidesFolder =""
@@ -17,9 +19,9 @@ class DynamicsMSMRWGuide:
     def __init__(self):
         self.url = CDS_API_URL + "/msmrw_guides?$expand=msmrw_guide_Annotations"
         if platform.system() == "Windows":
-            self.guidesFolder = os.getcwd() + "\\GuidesEncoder\\classes\\guides\\"
+            self.guidesFolder = os.getcwd() + "\\GuidesEncoder\\dynamicsmsmrw\\guides\\"
         elif platform.system() == "Linux":
-            self.guidesFolder = os.getcwd() + "/GuidesEncoder/classes/guides/"
+            self.guidesFolder = os.getcwd() + "/GuidesEncoder/dynamicsmsmrw/guides/"
 
     def get(self):        
         payload  = {}
@@ -54,12 +56,13 @@ class DynamicsMSMRWGuide:
         with open(self.guidesFolder + "in.json", "r+") as guideFile:
             data = json.load(guideFile)
             data["Guide"]["Id"] = guideId
-            data["Guide"]["Tasks"][0]["Steps"][0]["InstructionText"] = "Go run run"
+            data["Guide"]["Tasks"][0]["Steps"][0]["InstructionText"] = "And Knucks"
             guideFile.seek(0)  
             json.dump(data, guideFile, indent=2)
             guideFile.truncate()
             guideFile.close()
         
+    def encodeGuideFile(self):
         with open(self.guidesFolder + "in.json", encoding="utf8") as guideFile:
             data = json.load(guideFile)
             datastr = json.dumps(data)

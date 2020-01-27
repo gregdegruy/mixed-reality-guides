@@ -1,8 +1,9 @@
-from classes import AzureAuth
-from classes import DynamicsMSMRWGuide
+from dynamicsmsmrw import AzureAuth
+from dynamicsmsmrw import MSMRWGuide
 
 if __name__ == "__main__":
     # azureAuth = AzureAuth()
 
-    guide = DynamicsMSMRWGuide()
+    guide = MSMRWGuide()
     guide.createGuideFile()    
+    guide.encodeGuideFile() 
