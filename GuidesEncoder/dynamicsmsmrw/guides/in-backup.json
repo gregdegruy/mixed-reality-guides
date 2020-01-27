@@ -3,19 +3,19 @@
   "Guide": {
     "Id": "bfa368fc-a440-ea11-a812-000d3a569653",
     "Type": "Microsoft.Guides.Schema.IGuide",
-    "Name": "Guide",
+    "Name": "REST Guide 5",
     "Tasks": [
       {
-        "Id": "78327b5d-0843-4963-b453-dccf90bee90d",
+        "Id": "a44a069e-fc9a-460a-b04f-4701f86fc4f8",
         "Type": "Microsoft.Guides.Schema.IGuideTask",
         "Name": "Task name",
         "Steps": [
           {
-            "Id": "d4cfbe7c-a2e6-4e57-9c29-e31586b91819",
+            "Id": "5fac7961-d761-4d18-94f0-0bc03887ded2",
             "Type": "Microsoft.Guides.Schema.IGuideStep",
-            "InstructionText": "Step one text",
+            "InstructionText": "And Knucks",
             "Tether": {
-              "Id": "73ef54d9-095d-4fb6-bf64-cac21d6ac3cd",
+              "Id": "b4032b76-a920-4831-b0b1-623715a5c727",
               "Type": "Microsoft.Guides.Schema.ITether",
               "Transform": {
                 "Position": [
@@ -42,51 +42,19 @@
               "TetheredAsset": "00000000-0000-0000-0000-000000000000",
               "AttachedTo": 0
             },
-            "Media": [],
-            "PartTemplates": [],
-            "StepMode": 0
-          },
-          {
-            "Id": "dea1e0d8-2d97-4725-b276-d4e5326a4884",
-            "Type": "Microsoft.Guides.Schema.IGuideStep",
-            "InstructionText": "Step two text",
-            "Tether": {
-              "Id": "bd576edc-565c-4098-9002-6660607a7730",
-              "Type": "Microsoft.Guides.Schema.ITether",
-              "Transform": {
-                "Position": [
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Rotation": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "Scale": [
-                  0.0,
-                  0.0,
-                  0.0
-                ]
-              },
-              "IsPlacedInWorld": false,
-              "DisableAnimation": false,
-              "RenderMode": 0,
-              "AssetId": "00000000-0000-0000-0000-000000000000",
-              "TetheredAsset": "00000000-0000-0000-0000-000000000000",
-              "AttachedTo": 0
-            },
-            "Media": [],
-            "PartTemplates": [],
+            "Media": [
+              null
+            ],
+            "PartTemplates": [
+              null
+            ],
             "StepMode": 0
           }
         ]
       }
     ],
     "AlignmentStep": {
-      "Id": "14afbe28-53f5-437d-8208-65135a832794",
+      "Id": "cdc257e8-1729-4ec6-a4ce-5664c15e2ca0",
       "Type": "Microsoft.Guides.Schema.IAlignment",
       "InstructionText": "1. Align \"digital anchor\" hologram to a real world object:\n     o Tap and hold the hologram to move\n     o Tap and hold the blue spheres to rotate\n\n2. Select \"Confirm\" when you are done.",
       "Tether": {
@@ -117,7 +85,9 @@
         "TetheredAsset": "00000000-0000-0000-0000-000000000000",
         "AttachedTo": 3
       },
-      "Media": [],
+      "Media": [
+        null
+      ],
       "DigitalTwin": {
         "Id": "c31962b8-4a8f-4e3b-9ed6-8d0ea2538f8d",
         "Type": "Microsoft.Guides.Schema.IModelRef",
@@ -128,9 +98,9 @@
       "AlignmentModelType": 0
     },
     "CompletionStep": {
-      "Id": "d83851a6-ce76-46c5-94f6-49c11062233c",
+      "Id": "71bf1991-51d2-4650-a1be-cac9b2d85fb6",
       "Type": "Microsoft.Guides.Schema.IGuideStep",
-      "InstructionText": "Instruction text",
+      "InstructionText": "Congratulations! A winner is you.",
       "Tether": {
         "Id": "3fc4f1c4-9520-4ac3-bc3d-b61852edc13b",
         "Type": "Microsoft.Guides.Schema.ITether",
@@ -159,8 +129,12 @@
         "TetheredAsset": "00000000-0000-0000-0000-000000000000",
         "AttachedTo": 0
       },
-      "Media": [],
-      "PartTemplates": [],
+      "Media": [
+        null
+      ],
+      "PartTemplates": [
+        null
+      ],
       "StepMode": 0
     }
   }

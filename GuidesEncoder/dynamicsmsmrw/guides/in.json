@@ -3,19 +3,19 @@
   "Guide": {
     "Id": "bfa368fc-a440-ea11-a812-000d3a569653",
     "Type": "Microsoft.Guides.Schema.IGuide",
-    "Name": "REST Guide 5",
+    "Name": "Python Guide",
     "Tasks": [
       {
-        "Id": "a44a069e-fc9a-460a-b04f-4701f86fc4f8",
+        "Id": "0c1bb73a-868c-4f9f-b16c-d53a0c900b2a",
         "Type": "Microsoft.Guides.Schema.IGuideTask",
-        "Name": "Task name",
+        "Name": "Manually heat the nozzle to remove the jam ",
         "Steps": [
           {
-            "Id": "5fac7961-d761-4d18-94f0-0bc03887ded2",
+            "Id": "e0847af2-b082-416f-867f-523ecc13dae7",
             "Type": "Microsoft.Guides.Schema.IGuideStep",
-            "InstructionText": "And Knucks",
+            "InstructionText": "Select the Menu from the upper right corner of the printer's touch screen.",
             "Tether": {
-              "Id": "b4032b76-a920-4831-b0b1-623715a5c727",
+              "Id": "89bb54fb-56fd-42bf-bbac-69f801c9f64e",
               "Type": "Microsoft.Guides.Schema.ITether",
               "Transform": {
                 "Position": [
@@ -42,19 +42,195 @@
               "TetheredAsset": "00000000-0000-0000-0000-000000000000",
               "AttachedTo": 0
             },
-            "Media": [
-              null
-            ],
-            "PartTemplates": [
-              null
-            ],
+            "Media": [],
+            "PartTemplates": [],
+            "StepMode": 0
+          },
+          {
+            "Id": "5ac3c665-3980-4398-b423-f8f8b9d06c52",
+            "Type": "Microsoft.Guides.Schema.IGuideStep",
+            "InstructionText": "Select the Utilities tile from the available options.",
+            "Tether": {
+              "Id": "9defcd17-e5a4-46fa-a91f-a01b267a883f",
+              "Type": "Microsoft.Guides.Schema.ITether",
+              "Transform": {
+                "Position": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Rotation": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "IsPlacedInWorld": false,
+              "DisableAnimation": false,
+              "RenderMode": 0,
+              "AssetId": "00000000-0000-0000-0000-000000000000",
+              "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+              "AttachedTo": 0
+            },
+            "Media": [],
+            "PartTemplates": [],
+            "StepMode": 0
+          },
+          {
+            "Id": "59d8d1e5-68d0-4497-8133-b896a29d503a",
+            "Type": "Microsoft.Guides.Schema.IGuideStep",
+            "InstructionText": "Select the Temperature Control tile from the available options.",
+            "Tether": {
+              "Id": "e1d81369-7bd3-41ec-a63d-a694a4d37309",
+              "Type": "Microsoft.Guides.Schema.ITether",
+              "Transform": {
+                "Position": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Rotation": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "IsPlacedInWorld": false,
+              "DisableAnimation": false,
+              "RenderMode": 0,
+              "AssetId": "00000000-0000-0000-0000-000000000000",
+              "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+              "AttachedTo": 0
+            },
+            "Media": [],
+            "PartTemplates": [],
+            "StepMode": 0
+          },
+          {
+            "Id": "4ff2324c-c969-4660-ac15-1c08f9b3a2a5",
+            "Type": "Microsoft.Guides.Schema.IGuideStep",
+            "InstructionText": "Select the Heat option on the screen when prompted.",
+            "Tether": {
+              "Id": "ee53f622-b0da-467f-be88-cfe793d669c5",
+              "Type": "Microsoft.Guides.Schema.ITether",
+              "Transform": {
+                "Position": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Rotation": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "IsPlacedInWorld": false,
+              "DisableAnimation": false,
+              "RenderMode": 0,
+              "AssetId": "00000000-0000-0000-0000-000000000000",
+              "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+              "AttachedTo": 0
+            },
+            "Media": [],
+            "PartTemplates": [],
+            "StepMode": 0
+          },
+          {
+            "Id": "20eca3fe-ee7e-4037-ad08-3adf7ec2311a",
+            "Type": "Microsoft.Guides.Schema.IGuideStep",
+            "InstructionText": "Remove the thumb screw that connects the fiber Bowden tube to the print head.",
+            "Tether": {
+              "Id": "a8bcd937-3932-45aa-bda4-3fd3f2341324",
+              "Type": "Microsoft.Guides.Schema.ITether",
+              "Transform": {
+                "Position": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Rotation": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "IsPlacedInWorld": false,
+              "DisableAnimation": false,
+              "RenderMode": 0,
+              "AssetId": "00000000-0000-0000-0000-000000000000",
+              "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+              "AttachedTo": 0
+            },
+            "Media": [],
+            "PartTemplates": [],
+            "StepMode": 0
+          },
+          {
+            "Id": "35d6fe53-8ee2-4597-9095-6d9cd026fb2d",
+            "Type": "Microsoft.Guides.Schema.IGuideStep",
+            "InstructionText": "Look down throught the print head channel to verify that the print head blockage is clear.",
+            "Tether": {
+              "Id": "e6ad7fd3-80b8-47b3-9e6a-ea31a892d741",
+              "Type": "Microsoft.Guides.Schema.ITether",
+              "Transform": {
+                "Position": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Rotation": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "IsPlacedInWorld": false,
+              "DisableAnimation": false,
+              "RenderMode": 0,
+              "AssetId": "00000000-0000-0000-0000-000000000000",
+              "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+              "AttachedTo": 0
+            },
+            "Media": [],
+            "PartTemplates": [],
             "StepMode": 0
           }
         ]
       }
     ],
     "AlignmentStep": {
-      "Id": "cdc257e8-1729-4ec6-a4ce-5664c15e2ca0",
+      "Id": "8f1d98ab-eaed-4809-92ce-ef2940c11bf7",
       "Type": "Microsoft.Guides.Schema.IAlignment",
       "InstructionText": "1. Align \"digital anchor\" hologram to a real world object:\n     o Tap and hold the hologram to move\n     o Tap and hold the blue spheres to rotate\n\n2. Select \"Confirm\" when you are done.",
       "Tether": {
@@ -85,9 +261,7 @@
         "TetheredAsset": "00000000-0000-0000-0000-000000000000",
         "AttachedTo": 3
       },
-      "Media": [
-        null
-      ],
+      "Media": [],
       "DigitalTwin": {
         "Id": "c31962b8-4a8f-4e3b-9ed6-8d0ea2538f8d",
         "Type": "Microsoft.Guides.Schema.IModelRef",
@@ -98,9 +272,9 @@
       "AlignmentModelType": 0
     },
     "CompletionStep": {
-      "Id": "71bf1991-51d2-4650-a1be-cac9b2d85fb6",
+      "Id": "f13cf99c-3ef8-4762-8853-d0f2126fef92",
       "Type": "Microsoft.Guides.Schema.IGuideStep",
-      "InstructionText": "Congratulations! A winner is you.",
+      "InstructionText": "You're done! To finish up please do...",
       "Tether": {
         "Id": "3fc4f1c4-9520-4ac3-bc3d-b61852edc13b",
         "Type": "Microsoft.Guides.Schema.ITether",
@@ -129,12 +303,8 @@
         "TetheredAsset": "00000000-0000-0000-0000-000000000000",
         "AttachedTo": 0
       },
-      "Media": [
-        null
-      ],
-      "PartTemplates": [
-        null
-      ],
+      "Media": [],
+      "PartTemplates": [],
       "StepMode": 0
     }
   }

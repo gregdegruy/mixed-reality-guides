@@ -36,9 +36,9 @@ class MSMRWGuide:
                 "CompletionStep": {}
             }
         }
-        self.task = MSMRWGuideTask("Task name")
+        self.task = MSMRWGuideTask("Manually heat the nozzle to remove the jam ")
         self.alignmentStep = MSMRWGuideAlignmentStep()
-        self.completionStep = MSMRWGuideCompletionStep("Instruction text")
+        self.completionStep = MSMRWGuideCompletionStep("You're done! To finish up please do...")
 
     def get(self):        
         payload  = {}
@@ -69,17 +69,8 @@ class MSMRWGuide:
         
         # TODO: generate GUID for each Task, AlignmentStep, and CompletionStep
         g = str(uuid.uuid4())        
-       
+               
         with open(self.guidesFolder + "in.json", "r+") as guideFile:
-            data = json.load(guideFile)
-            data["Guide"]["Id"] = guideId
-            data["Guide"]["Tasks"][0]["Steps"][0]["InstructionText"] = "And Knucks"
-            guideFile.seek(0)  
-            json.dump(data, guideFile, indent=2)
-            guideFile.truncate()
-            guideFile.close()
-        
-        with open(self.guidesFolder + "superin.json", "r+") as guideFile:
             self.guideJson["Guide"]["Id"] = guideId
             self.guideJson["Guide"]["Tasks"][0] = self.task.taskJson
             self.guideJson["Guide"]["AlignmentStep"] = self.alignmentStep.alignmentStepJson
@@ -88,7 +79,7 @@ class MSMRWGuide:
             guideFile.close()
         
     def encodeGuideFile(self):
-        with open(self.guidesFolder + "superin.json", encoding="utf8") as guideFile:
+        with open(self.guidesFolder + "in.json", encoding="utf8") as guideFile:
             data = json.load(guideFile)
             datastr = json.dumps(data)
             encoded = base64.b64encode(datastr.encode("utf-8"))
