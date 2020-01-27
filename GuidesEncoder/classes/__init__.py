@@ -1,4 +1,5 @@
 """Guides Python API"""
 
 from .azureauth import AzureAuth
-from .dynamicsguides import DynamicsGuides
+from .dynamicsmsmrwguide import DynamicsMSMRWGuide
+from .dynamicsmsmrwguidestask import DynamicsMSMRWGuideTask
