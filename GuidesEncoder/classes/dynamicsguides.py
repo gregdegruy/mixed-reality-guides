@@ -2,8 +2,10 @@ import base64
 import json
 import os
 import platform
+import uuid
 
 from .azureauth import AzureAuth
+from .config import *
 
 class DynamicsGuides:
     url = ""
@@ -21,17 +23,28 @@ class DynamicsGuides:
         print(response.text.encode("utf8"))
 
     def createGuide(self):
-        j = {"msmrw_schemaversion": 3,"msmrw_name": "REST Guide 1"}
+        j = {"msmrw_schemaversion": 3, "msmrw_name": "REST Guide 1", "msmrw_guide_Annotations": [{"mimetype": "application/octet-stream", "isdocument": true, "filename": "Name it whatever.json"}]}
         jStr = json.dumps(j1)
 
     def addGuideFile(self):
+        # TODO: Grab these from createGuide
+        guideId = "bfa368fc-a440-ea11-a812-000d3a569653"
+        annotationId = "c0a368fc-a440-ea11-a812-000d3a569653"
         pass
 
     def createGuideFile(self):
+        # TODO: don't forget the guide id
+        guideId = "bfa368fc-a440-ea11-a812-000d3a569653"
+        
+        # TODO: generate GUID for each Tasks, AlignmentStep, and CompletionStep
+        g = str(uuid.uuid4())
+        print(g)
+
         sampleDiagnosis = "https://beta.revtwo.com/session/L9X26twMg3cRTBnvmPkq4KVJbWNCHj?navcode=5cGZd3fFhz"
         domStepClass = "stepbox-frame"
         guideFilePath = ""
         encoded = ""
+        
         if platform.system() == "Windows":
             guideFilePath = os.getcwd() + "\\GuidesEncoder\\steps\\in.json"
         elif platform.system() == "Linux":
