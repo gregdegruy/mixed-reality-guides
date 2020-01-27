@@ -12,6 +12,7 @@ from .msmrwguidetask import MSMRWGuideTask
 
 class MSMRWGuide:
     annotationId = ""
+    azureAuth = None
     guideId = ""
     guidesFolder =""
     url = ""
@@ -20,6 +21,7 @@ class MSMRWGuide:
     completionStep = None
 
     def __init__(self, name):
+        azureAuth = AzureAuth()
         self.url = CDS_API_URL + "/msmrw_guides?$expand=msmrw_guide_Annotations"
         if platform.system() == "Windows":
             self.guidesFolder = os.getcwd() + "\\GuidesEncoder\\dynamicsmsmrw\\guides\\"
