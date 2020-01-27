@@ -6,19 +6,26 @@ import platform
 from .azureauth import AzureAuth
 
 class DynamicsGuides:
+    url = ""
     def __init__(self):
-        pass
+        self.url = CDS_API_URL + "/msmrw_guides?$expand=msmrw_guide_Annotations"
 
-    def get(self):
-        url = CDS_API_URL + "/msmrw_guides?$expand=msmrw_guide_Annotations"
+    def get(self):        
         payload  = {}
         headers = {
             "Authorization": "Bearer " + token_response["accessToken"]
         }
 
-        response = requests.request("GET", url, headers=headers, data=payload)
+        response = requests.request("GET", self.url, headers=headers, data=payload)
 
         print(response.text.encode("utf8"))
+
+    def createGuide(self):
+        j = {"msmrw_schemaversion": 3,"msmrw_name": "REST Guide 1"}
+        jStr = json.dumps(j1)
+
+    def addGuideFile(self):
+        pass
 
     def createGuideFile(self):
         sampleDiagnosis = "https://beta.revtwo.com/session/L9X26twMg3cRTBnvmPkq4KVJbWNCHj?navcode=5cGZd3fFhz"
