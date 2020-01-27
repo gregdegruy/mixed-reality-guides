@@ -15,6 +15,9 @@ class MSMRWGuide:
     guideId = ""
     guidesFolder =""
     url = ""
+    task = None
+    alignmentStep = None
+    completionStep = None
 
     def __init__(self, name):
         self.url = CDS_API_URL + "/msmrw_guides?$expand=msmrw_guide_Annotations"
@@ -28,11 +31,14 @@ class MSMRWGuide:
                 "Id": "00000000-0000-0000-0000-000000000000",
                 "Type": "Microsoft.Guides.Schema.IGuide",
                 "Name": name,
-                "Tasks": [],
+                "Tasks": [{}],
                 "AlignmentStep": {},
                 "CompletionStep": {}
             }
         }
+        self.task = MSMRWGuideTask("Task name")
+        self.alignmentStep = MSMRWGuideAlignmentStep()
+        self.completionStep = MSMRWGuideCompletionStep("Instruction text")
 
     def get(self):        
         payload  = {}
@@ -74,11 +80,15 @@ class MSMRWGuide:
             guideFile.close()
         
         with open(self.guidesFolder + "superin.json", "r+") as guideFile:
+            self.guideJson["Guide"]["Id"] = guideId
+            self.guideJson["Guide"]["Tasks"][0] = self.task.taskJson
+            self.guideJson["Guide"]["AlignmentStep"] = self.alignmentStep.alignmentStepJson
+            self.guideJson["Guide"]["CompletionStep"] = self.completionStep.completionStepJson
             json.dump(self.guideJson, guideFile, indent=2)
             guideFile.close()
         
     def encodeGuideFile(self):
-        with open(self.guidesFolder + "in.json", encoding="utf8") as guideFile:
+        with open(self.guidesFolder + "superin.json", encoding="utf8") as guideFile:
             data = json.load(guideFile)
             datastr = json.dumps(data)
             encoded = base64.b64encode(datastr.encode("utf-8"))

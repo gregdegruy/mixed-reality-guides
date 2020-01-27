@@ -1,11 +1,167 @@
 {
   "Schema": "GuidesV3",
   "Guide": {
-    "Id": "00000000-0000-0000-0000-000000000000",
+    "Id": "bfa368fc-a440-ea11-a812-000d3a569653",
     "Type": "Microsoft.Guides.Schema.IGuide",
     "Name": "Guide",
-    "Tasks": [],
-    "AlignmentStep": {},
-    "CompletionStep": {}
+    "Tasks": [
+      {
+        "Id": "78327b5d-0843-4963-b453-dccf90bee90d",
+        "Type": "Microsoft.Guides.Schema.IGuideTask",
+        "Name": "Task name",
+        "Steps": [
+          {
+            "Id": "d4cfbe7c-a2e6-4e57-9c29-e31586b91819",
+            "Type": "Microsoft.Guides.Schema.IGuideStep",
+            "InstructionText": "Step one text",
+            "Tether": {
+              "Id": "73ef54d9-095d-4fb6-bf64-cac21d6ac3cd",
+              "Type": "Microsoft.Guides.Schema.ITether",
+              "Transform": {
+                "Position": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Rotation": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "IsPlacedInWorld": false,
+              "DisableAnimation": false,
+              "RenderMode": 0,
+              "AssetId": "00000000-0000-0000-0000-000000000000",
+              "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+              "AttachedTo": 0
+            },
+            "Media": [],
+            "PartTemplates": [],
+            "StepMode": 0
+          },
+          {
+            "Id": "dea1e0d8-2d97-4725-b276-d4e5326a4884",
+            "Type": "Microsoft.Guides.Schema.IGuideStep",
+            "InstructionText": "Step two text",
+            "Tether": {
+              "Id": "bd576edc-565c-4098-9002-6660607a7730",
+              "Type": "Microsoft.Guides.Schema.ITether",
+              "Transform": {
+                "Position": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Rotation": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "IsPlacedInWorld": false,
+              "DisableAnimation": false,
+              "RenderMode": 0,
+              "AssetId": "00000000-0000-0000-0000-000000000000",
+              "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+              "AttachedTo": 0
+            },
+            "Media": [],
+            "PartTemplates": [],
+            "StepMode": 0
+          }
+        ]
+      }
+    ],
+    "AlignmentStep": {
+      "Id": "14afbe28-53f5-437d-8208-65135a832794",
+      "Type": "Microsoft.Guides.Schema.IAlignment",
+      "InstructionText": "1. Align \"digital anchor\" hologram to a real world object:\n     o Tap and hold the hologram to move\n     o Tap and hold the blue spheres to rotate\n\n2. Select \"Confirm\" when you are done.",
+      "Tether": {
+        "Id": "4181a318-fb23-42db-99c6-86b41ceea700",
+        "Type": "Microsoft.Guides.Schema.ITether",
+        "Transform": {
+          "Position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Rotation": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Scale": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "IsPlacedInWorld": false,
+        "DisableAnimation": false,
+        "RenderMode": 0,
+        "AssetId": "00000000-0000-0000-0000-000000000000",
+        "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+        "AttachedTo": 3
+      },
+      "Media": [],
+      "DigitalTwin": {
+        "Id": "c31962b8-4a8f-4e3b-9ed6-8d0ea2538f8d",
+        "Type": "Microsoft.Guides.Schema.IModelRef",
+        "AssetId": "8d856ff1-abb3-e911-a812-000d3af46b49",
+        "RenderMode": 0
+      },
+      "StepMode": 1,
+      "AlignmentModelType": 0
+    },
+    "CompletionStep": {
+      "Id": "d83851a6-ce76-46c5-94f6-49c11062233c",
+      "Type": "Microsoft.Guides.Schema.IGuideStep",
+      "InstructionText": "Instruction text",
+      "Tether": {
+        "Id": "3fc4f1c4-9520-4ac3-bc3d-b61852edc13b",
+        "Type": "Microsoft.Guides.Schema.ITether",
+        "Transform": {
+          "Position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Rotation": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Scale": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "IsPlacedInWorld": false,
+        "DisableAnimation": false,
+        "RenderMode": 0,
+        "AssetId": "00000000-0000-0000-0000-000000000000",
+        "TetheredAsset": "00000000-0000-0000-0000-000000000000",
+        "AttachedTo": 0
+      },
+      "Media": [],
+      "PartTemplates": [],
+      "StepMode": 0
+    }
   }
 }
