@@ -1,0 +1,11 @@
+{
+  "Schema": "GuidesV3",
+  "Guide": {
+    "Id": "00000000-0000-0000-0000-000000000000",
+    "Type": "Microsoft.Guides.Schema.IGuide",
+    "Name": "Guide",
+    "Tasks": [],
+    "AlignmentStep": {},
+    "CompletionStep": {}
+  }
+}

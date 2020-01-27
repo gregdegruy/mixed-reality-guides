@@ -16,12 +16,23 @@ class MSMRWGuide:
     guidesFolder =""
     url = ""
 
-    def __init__(self):
+    def __init__(self, name):
         self.url = CDS_API_URL + "/msmrw_guides?$expand=msmrw_guide_Annotations"
         if platform.system() == "Windows":
             self.guidesFolder = os.getcwd() + "\\GuidesEncoder\\dynamicsmsmrw\\guides\\"
         elif platform.system() == "Linux":
             self.guidesFolder = os.getcwd() + "/GuidesEncoder/dynamicsmsmrw/guides/"
+        self.guideJson = {
+            "Schema": "GuidesV3",
+            "Guide": {
+                "Id": "00000000-0000-0000-0000-000000000000",
+                "Type": "Microsoft.Guides.Schema.IGuide",
+                "Name": name,
+                "Tasks": [],
+                "AlignmentStep": {},
+                "CompletionStep": {}
+            }
+        }
 
     def get(self):        
         payload  = {}
@@ -60,6 +71,10 @@ class MSMRWGuide:
             guideFile.seek(0)  
             json.dump(data, guideFile, indent=2)
             guideFile.truncate()
+            guideFile.close()
+        
+        with open(self.guidesFolder + "superin.json", "r+") as guideFile:
+            json.dump(self.guideJson, guideFile, indent=2)
             guideFile.close()
         
     def encodeGuideFile(self):
