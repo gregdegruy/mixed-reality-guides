@@ -1,6 +1,6 @@
 import uuid
 
-class MSMRWGuideCompletionStep:
+class GuideCompletionStep:
     
     completionStepJson = {}
     

@@ -6,11 +6,11 @@ import uuid
 
 from .azureauth import AzureAuth
 from .config import *
-from .msmrwguidealignmentstep import MSMRWGuideAlignmentStep
-from .msmrwguidecompletionstep import MSMRWGuideCompletionStep
-from .msmrwguidetask import MSMRWGuideTask
+from .guidealignmentstep import GuideAlignmentStep
+from .guidecompletionstep import GuideCompletionStep
+from .guidetask import GuideTask
 
-class MSMRWGuide:
+class Guide:
     annotationId = ""
     azureAuth = None
     guideId = ""
@@ -24,9 +24,9 @@ class MSMRWGuide:
         azureAuth = AzureAuth()
         self.url = CDS_API_URL + "/msmrw_guides?$expand=msmrw_guide_Annotations"
         if platform.system() == "Windows":
-            self.guidesFolder = os.getcwd() + "\\GuidesEncoder\\dynamicsmsmrw\\guides\\"
+            self.guidesFolder = os.getcwd() + "\\GuidesEncoder\\app\\msmrw\\guides\\"
         elif platform.system() == "Linux":
-            self.guidesFolder = os.getcwd() + "/GuidesEncoder/dynamicsmsmrw/guides/"
+            self.guidesFolder = os.getcwd() + "/GuidesEncoder/app/msmrw/guides/"
         self.guideJson = {
             "Schema": "GuidesV3",
             "Guide": {
@@ -43,12 +43,7 @@ class MSMRWGuide:
         self.completionStep = MSMRWGuideCompletionStep("You're done! To finish up please do...")
 
     def get(self):        
-        payload  = {}
-        headers = {
-            "Authorization": "Bearer " + token_response["accessToken"]
-        }
-        response = requests.request("GET", self.url, headers=headers, data=payload)
-        print(response.text.encode("utf8"))
+        pass
 
     def getStepsFromHtml(self):
         sampleDiagnosis = "https://beta.revtwo.com/session/L9X26twMg3cRTBnvmPkq4KVJbWNCHj?navcode=5cGZd3fFhz"

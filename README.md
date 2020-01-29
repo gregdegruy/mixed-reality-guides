@@ -15,6 +15,7 @@ pip install virtualenv
 python3 -m venv linux 
 source env/linux/bin/activate 
 ```
+
 Windows
 ```python
 pip install virtualenv
@@ -28,11 +29,12 @@ pip install -r requirements.txt
 python __main__.py
 ```
 
-Application permissions for Graph do NOT require interactve auth from user
-https://github.com/Azure-Samples/ms-identity-python-daemon/tree/master/1-Call-MsGraph-WithSecret
+adal # works for api with application and delegated permissions
+https://github.com/Azure-Samples/ms-identity-python-daemon
 
-Delegated permissions for CRM required interactve auth from user, requires get code from the BIG endpoint
-https://github.com/AzureAD/azure-activedirectory-library-for-python/blob/dev/sample/website_sample.py#L104
+MSAL one will be updated going forward
+import msal # works for api with application permissions
+https://github.com/Azure-Samples/ms-identity-python-webapp
 
 the BIG endpoint
 
@@ -49,3 +51,5 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 &resource=https%3A%2F%2Fservice.contoso.com%2F
 &state=12345
 ```
+
+Verify scope and authority using https://jwt.ms/.

@@ -1,6 +1,6 @@
 import uuid
 
-class MSMRWGuideAlignmentStep:
+class GuideAlignmentStep:
     
     alignmentStepJson = {}
     digitalTwin = {}

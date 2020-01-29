@@ -6,5 +6,6 @@ config.PY
 env/*
 !env/.win/requirements.txt
 !env/linux/requirements.txt
+flask_session/
 info.sys
 .pytest_cache

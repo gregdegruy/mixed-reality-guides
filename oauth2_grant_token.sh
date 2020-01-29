@@ -14,4 +14,12 @@ curl -X POST https://login.microsoftonline.com/${TENANT}/oauth2/token \
 
 curl -X POST https://login.microsoftonline.com/${TENANT}/oauth2/authorize?client_id=${CLIENT_ID}&response_type=code&redirect_uri=${REDIRECT_URI}&response_mode=query&resource=${RESOURCE}&state=12345
 
+
 https://login.microsoftonline.com/grdegr.onmicrosoft.com/oauth2/authorize?client_id=0960be47-c441-4a8b-96e1-16f97487ff35&response_type=code&redirect_uri=https%3A%2F%2Fcallbackurl&response_mode=query&resource=https%3A%2F%2Fmsott.api.crm.dynamics.com%2F&state=12345
+
+https://login.microsoftonline.com/grdegr.onmicrosoft.com/oauth2/authorize?
+client_id=3641e71b-ad98-4489-8423-f77532d0a5d5
+response_type=code
+redirect_uri=https%3A%2F%2Flocalhost:5000/getAToken
+response_mode=query
+resource=https%3A%2F%2Fmsott.api.crm.dynamics.com

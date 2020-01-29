@@ -1,7 +1,0 @@
-AUTHORITY_URL=""
-CDS_API_URL=""
-CLIENT_ID=""
-CLIENT_SECRET=""
-REDIRECT_URI=""
-RESOURCE="" # like "https://your_cds_environment.api.crm.dynamics.com/"
-TENANT="" # like "https://login.microsoftonline.com/put_your_tenant"
