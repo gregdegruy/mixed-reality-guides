@@ -5,7 +5,7 @@ import platform
 import uuid
 
 from .azureauth import AzureAuth
-from .config import *
+from guidesencoder.config import DevConfig
 from .guidealignmentstep import GuideAlignmentStep
 from .guidecompletionstep import GuideCompletionStep
 from .guidetask import GuideTask

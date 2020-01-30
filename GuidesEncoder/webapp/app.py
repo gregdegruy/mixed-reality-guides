@@ -4,11 +4,7 @@ import msal
 import requests
 import uuid
 
-# from .. import config
-
-# import config
-
-from config import DevConfig
+from guidesencoder.config import DevConfig
 
 app = Flask(__name__)
 app.config.from_object(DevConfig)
@@ -23,7 +19,6 @@ def index():
 @app.route("/login")
 def login():
     session["state"] = str(uuid.uuid4())
-    # here we choose to also collect end user consent upfront 
     auth_url = _build_auth_url(scopes=DevConfig.SCOPE, state=session["state"])
     return render_template("login.html", auth_url=auth_url, version=msal.__version__)
 
@@ -52,8 +47,8 @@ def logout():
         DevConfig.AUTHORITY_MULTI_TENANT + "/oauth2/v2.0/logout" +
         "?post_logout_redirect_uri=" + url_for("index", _external=True))
 
-@app.route("/graphcall")
-def graphcall():
+@app.route("/getguide")
+def getGuides():
     token = _get_token_from_cache(DevConfig.SCOPE)
     if not token:
         return redirect(url_for("login"))    
@@ -63,6 +58,22 @@ def graphcall():
         ).json()
     return render_template('display.html', result=graph_data)
 
+@app.route("/postguide")
+def postGuides():
+    token = _get_token_from_cache(DevConfig.SCOPE)
+    if not token:
+        return redirect(url_for("login"))    
+    guideNmae = "REST Guide 22"
+    payload = "{\r\n    \"msmrw_schemaversion\": 3,\r\n    \"msmrw_name\": \"" + guideNmae + "\",\r\n    \"msmrw_guide_Annotations\": [\r\n    \t{\r\n\t        \"mimetype\": \"application/octet-stream\",\r\n\t\t\t\"isdocument\": true,\r\n\t        \"filename\": \"Name it whatever.json\"\r\n    \t}\r\n\t]\r\n}"
+    headers = {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + token['access_token']
+    }
+    graph_data = requests.request("POST", 
+        str(DevConfig.CDS_API_URL + "/msmrw_guides?$select=msmrw_name&$expand=msmrw_guide_Annotations"), 
+        headers=headers, 
+        data=payload)
+    return render_template('display.html', result=str("Post complete" + graph_data.text))
 
 def _load_cache():
     cache = msal.SerializableTokenCache()

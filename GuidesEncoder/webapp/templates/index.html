@@ -8,7 +8,8 @@
     <h2>Welcome {{ user.get("name") }}!</h2>
 
     {% if config.get("CDS_API_URL") %}
-      <li><a href='/graphcall'>Call CDS Guides API</a></li>
+      <li><a href='/getguide'>Call CDS Guides GET API</a></li>
+      <li><a href='/postguide'>Call CDS Guides POST API</a></li>
     {% endif %}
 
     {% if config.get("B2C_PROFILE_AUTHORITY") %}

@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
 </head>
 <body>
-    <h1>CDS Guides API Call Result</h1>
-    <pre>{{ result |tojson(indent=4) }}</pre> <!-- Just a generic json viewer -->
     <a href="javascript:window.history.go(-1)">Back</a>
+    <h1>CDS Guides API Call Result</h1>
+    {% if result is string %}
+        <pre>{{ result }}</pre>
+    {% else %}
+        <pre>{{ result | tojson(indent=4) }}</pre>
+    {% endif %}    
 </body>
 </html>
 
