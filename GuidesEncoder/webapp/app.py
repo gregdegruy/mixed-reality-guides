@@ -4,15 +4,15 @@ import msal
 import requests
 import uuid
 
-# from ..config import Config
+# from .. import config
 
-from .config import DevConfig
+# import config
+
+from config import DevConfig
 
 app = Flask(__name__)
-config = DevConfig
-app.config.from_object(config)
-app.config["CLIENT_SECRET"] = "0JKAaSQKItx5YGr7gNNmspq7rYFuiYLZKLjoVdfvnAE="
-app.config["SESSION_TYPE"] = "filesystem"
+app.config.from_object(DevConfig)
+Session(app)
 
 @app.route("/")
 def index():
@@ -24,10 +24,10 @@ def index():
 def login():
     session["state"] = str(uuid.uuid4())
     # here we choose to also collect end user consent upfront 
-    auth_url = _build_auth_url(scopes=config.SCOPE, state=session["state"])
+    auth_url = _build_auth_url(scopes=DevConfig.SCOPE, state=session["state"])
     return render_template("login.html", auth_url=auth_url, version=msal.__version__)
 
-@app.route(config.REDIRECT_PATH)  # Its absolute URL must match your app's redirect_uri set in AAD
+@app.route(DevConfig.REDIRECT_PATH)  # Its absolute URL must match your app's redirect_uri set in AAD
 def authorized():
     if request.args.get('state') != session.get("state"):
         return redirect(url_for("index"))
@@ -37,7 +37,7 @@ def authorized():
         cache = _load_cache()
         result = _build_msal_app(cache=cache).acquire_token_by_authorization_code(
             request.args['code'],
-            scopes=config.SCOPE,
+            scopes=DevConfig.SCOPE,
             redirect_uri=url_for("authorized", _external=True))
         if "error" in result:
             return render_template("auth_error.html", result=result)
@@ -49,20 +49,18 @@ def authorized():
 def logout():
     session.clear() 
     return redirect( 
-        config.AUTHORITY_MULTI_TENANT + "/oauth2/v2.0/logout" +
+        DevConfig.AUTHORITY_MULTI_TENANT + "/oauth2/v2.0/logout" +
         "?post_logout_redirect_uri=" + url_for("index", _external=True))
 
 @app.route("/graphcall")
 def graphcall():
-    token = _get_token_from_cache(config.SCOPE)
+    token = _get_token_from_cache(DevConfig.SCOPE)
     if not token:
         return redirect(url_for("login"))    
-    print("token " + token['access_token'])
     graph_data = requests.get(
-        str(config.CDS_API_URL + "/msmrw_guides?$select=msmrw_name&$expand=msmrw_guide_Annotations"),
+        str(DevConfig.CDS_API_URL + "/msmrw_guides?$select=msmrw_name&$expand=msmrw_guide_Annotations"),
         headers={'Authorization': 'Bearer ' + token['access_token']},
         ).json()
-    print(str(graph_data))
     return render_template('display.html', result=graph_data)
 
 
@@ -78,8 +76,8 @@ def _save_cache(cache):
 
 def _build_msal_app(cache=None, authority=None):
     return msal.ConfidentialClientApplication(
-        config.CLIENT_ID, authority=authority or config.AUTHORITY_MULTI_TENANT,
-        client_credential=config.CLIENT_SECRET, token_cache=cache)
+        DevConfig.CLIENT_ID, authority=authority or DevConfig.AUTHORITY_MULTI_TENANT,
+        client_credential=DevConfig.CLIENT_SECRET, token_cache=cache)
 
 def _build_auth_url(authority=None, scopes=None, state=None):
     return _build_msal_app(authority=authority).get_authorization_request_url(

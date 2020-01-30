@@ -29,6 +29,8 @@ pip install -r requirements.txt
 python __main__.py
 ```
 
+Security and Complianec. Authentication (get token) and authorization (what's your permissions).
+
 adal # works for api with application and delegated permissions
 https://github.com/Azure-Samples/ms-identity-python-daemon
 

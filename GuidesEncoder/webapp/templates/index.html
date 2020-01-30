@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
 </head>
 <body>
-    <h1>Microsoft Identity Python Web App</h1>
+    <h1>Microsoft CDS STS Identity Python Web App</h1>
     <h2>Welcome {{ user.get("name") }}!</h2>
 
-    {% if config.get("ENDPOINT") %}
-      <li><a href='/graphcall'>Call Microsoft Graph API</a></li>
+    {% if config.get("CDS_API_URL") %}
+      <li><a href='/graphcall'>Call CDS Guides API</a></li>
     {% endif %}
 
     {% if config.get("B2C_PROFILE_AUTHORITY") %}
