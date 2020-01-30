@@ -1,4 +1,5 @@
 {
     // TODO: replace with path to your environment
-    "python.pythonPath": "C:\\Users\\grego\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe"
+    "python.pythonPath": "C:\\Users\\grego\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe",
+    "python.linting.enabled": true
 }

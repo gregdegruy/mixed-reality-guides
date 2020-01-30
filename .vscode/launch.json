@@ -1,15 +1,15 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
+    "version": "0.0.2",
     "configurations": [
         {
             "name": "Python Console Daemon",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/GuidesEncoder/app/__main__.py",
-            "console": "integratedTerminal"
+            "program": "${workspaceFolder}/guidesencoder/app/__main__.py",
+            "console": "integratedTerminal",
+            "args": [
+                "run ${workspaceFolder}/guidesencoder/app/__main__.py"
+            ],
         },
         {
             "name": "Python: Flask Web App",
@@ -17,7 +17,7 @@
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP": "${workspaceFolder}/GuidesEncoder/webapp/app.py",
+                "FLASK_APP": "${workspaceFolder}/guidesencoder/webapp/app.py",
                 "FLASK_ENV": "development",
                 "FLASK_DEBUG": "1"
             },

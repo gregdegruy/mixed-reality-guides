@@ -4,15 +4,19 @@ import os
 import platform
 import uuid
 
-from .azureauth import AzureAuth
-from guidesencoder.config import DevConfig
+try:
+    from guidesencoder.config import DevConfig
+except ImportError:
+    import sys
+    sys.path.append('.')
+    from guidesencoder.config import DevConfig
+
 from .guidealignmentstep import GuideAlignmentStep
 from .guidecompletionstep import GuideCompletionStep
 from .guidetask import GuideTask
 
 class Guide:
     annotationId = ""
-    azureAuth = None
     guideId = ""
     guidesFolder =""
     url = ""
@@ -21,8 +25,7 @@ class Guide:
     completionStep = None
 
     def __init__(self, name):
-        azureAuth = AzureAuth()
-        self.url = CDS_API_URL + "/msmrw_guides?$expand=msmrw_guide_Annotations"
+        self.url = DevConfig.CDS_API_URL + "/msmrw_guides?$expand=msmrw_guide_Annotations"
         if platform.system() == "Windows":
             self.guidesFolder = os.getcwd() + "\\GuidesEncoder\\app\\msmrw\\guides\\"
         elif platform.system() == "Linux":
@@ -38,9 +41,9 @@ class Guide:
                 "CompletionStep": {}
             }
         }
-        self.task = MSMRWGuideTask("Manually heat the nozzle to remove the jam ")
-        self.alignmentStep = MSMRWGuideAlignmentStep()
-        self.completionStep = MSMRWGuideCompletionStep("You're done! To finish up please do...")
+        self.task = GuideTask("Manually heat the nozzle to remove the jam ")
+        self.alignmentStep = GuideAlignmentStep()
+        self.completionStep = GuideCompletionStep("You're done! To finish up please do...")
 
     def get(self):        
         pass
