@@ -27,25 +27,24 @@ def index():
 @app.route("/login")
 def login():
     session["state"] = str(uuid.uuid4())
-    auth_url = _build_auth_url(scopes=DevConfig.SCOPE, state=session["state"])
+    auth_url = _build_auth_url()
     return render_template("login.html", auth_url=auth_url, version=msal.__version__)
 
-@app.route(DevConfig.REDIRECT_PATH)  # Its absolute URL must match your app's redirect_uri set in AAD
+@app.route(DevConfig.REDIRECT_PATH)
 def authorized():
     if request.args.get('state') != session.get("state"):
         return redirect(url_for("index"))
     if "error" in request.args:
         return render_template("auth_error.html", result=request.args)
     if request.args.get('code'):
-        cache = _load_cache()
-        result = azureAuth.confidentialClient.acquire_token_by_authorization_code(
+        cache = azureAuth.load_cache(session)
+        result = azureAuth.acquire_token_by_authorization_code(
             request.args['code'],
-            scopes=DevConfig.SCOPE,
-            redirect_uri=url_for("authorized", _external=True))
+            url_for("authorized", _external=True))
         if "error" in result:
             return render_template("auth_error.html", result=result)
         session["user"] = result.get("id_token_claims")
-        _save_cache(cache)
+        session["token_cache"] = azureAuth.save_cache(cache)
     return redirect(url_for("index"))
 
 @app.route("/logout")
@@ -93,8 +92,8 @@ def _save_cache(cache):
         azureAuth.cache = cache
         session["token_cache"] = azureAuth.cache.serialize()
 
-def _build_auth_url(authority=None, scopes=None, state=None):
-    return azureAuth.get_auth_url(state, url_for("authorized", _external=True))
+def _build_auth_url():
+    return azureAuth.get_auth_url(session["state"], url_for("authorized", _external=True))
 
 def _get_token_from_cache(scope=None):
     cache = _load_cache()

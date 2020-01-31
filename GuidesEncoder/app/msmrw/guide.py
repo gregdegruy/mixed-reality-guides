@@ -16,13 +16,6 @@ from .guidecompletionstep import GuideCompletionStep
 from .guidetask import GuideTask
 
 class Guide:
-    annotationId = ""
-    guideId = ""
-    guidesFolder =""
-    url = ""
-    task = None
-    alignmentStep = None
-    completionStep = None
 
     def __init__(self, name):
         self.url = DevConfig.CDS_API_URL + "/msmrw_guides?$expand=msmrw_guide_Annotations"
