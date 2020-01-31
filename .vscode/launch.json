@@ -1,0 +1,27 @@
+{
+    "version": "0.0.2",
+    "configurations": [
+        {
+            "name": "Python Console Daemon",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/guidesencoder/app/__main__.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Flask Web App",
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "env": {
+                "FLASK_APP": "${workspaceFolder}/guidesencoder/webapp/app.py",
+                "FLASK_ENV": "development",
+                "FLASK_DEBUG": "1"
+            },
+            "args": [
+                "run"
+            ],
+            "jinja": true
+        }
+    ]
+}

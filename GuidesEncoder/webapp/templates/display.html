@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <a href="javascript:window.history.go(-1)">Back</a>
+    <h1>CDS Guides API Call Result</h1>
+    {% if result is string %}
+        <pre>{{ result }}</pre>
+    {% else %}
+        <pre>{{ result | tojson(indent=4) }}</pre>
+    {% endif %}    
+</body>
+</html>
+

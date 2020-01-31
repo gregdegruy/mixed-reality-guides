@@ -4,27 +4,25 @@ import os
 import platform
 import uuid
 
-from .azureauth import AzureAuth
-from .config import *
-from .msmrwguidealignmentstep import MSMRWGuideAlignmentStep
-from .msmrwguidecompletionstep import MSMRWGuideCompletionStep
-from .msmrwguidetask import MSMRWGuideTask
+try:
+    from guidesencoder.config import DevConfig
+except ImportError:
+    import sys
+    sys.path.append('.')
+    from guidesencoder.config import DevConfig
 
-class MSMRWGuide:
-    annotationId = ""
-    guideId = ""
-    guidesFolder =""
-    url = ""
-    task = None
-    alignmentStep = None
-    completionStep = None
+from .guidealignmentstep import GuideAlignmentStep
+from .guidecompletionstep import GuideCompletionStep
+from .guidetask import GuideTask
+
+class Guide:
 
     def __init__(self, name):
-        self.url = CDS_API_URL + "/msmrw_guides?$expand=msmrw_guide_Annotations"
+        self.url = DevConfig.CDS_API_URL + "/msmrw_guides?$expand=msmrw_guide_Annotations"
         if platform.system() == "Windows":
-            self.guidesFolder = os.getcwd() + "\\GuidesEncoder\\dynamicsmsmrw\\guides\\"
+            self.guidesFolder = os.getcwd() + "\\GuidesEncoder\\app\\msmrw\\guides\\"
         elif platform.system() == "Linux":
-            self.guidesFolder = os.getcwd() + "/GuidesEncoder/dynamicsmsmrw/guides/"
+            self.guidesFolder = os.getcwd() + "/GuidesEncoder/app/msmrw/guides/"
         self.guideJson = {
             "Schema": "GuidesV3",
             "Guide": {
@@ -36,17 +34,12 @@ class MSMRWGuide:
                 "CompletionStep": {}
             }
         }
-        self.task = MSMRWGuideTask("Manually heat the nozzle to remove the jam ")
-        self.alignmentStep = MSMRWGuideAlignmentStep()
-        self.completionStep = MSMRWGuideCompletionStep("You're done! To finish up please do...")
+        self.task = GuideTask("Manually heat the nozzle to remove the jam ")
+        self.alignmentStep = GuideAlignmentStep()
+        self.completionStep = GuideCompletionStep("You're done! To finish up please do...")
 
     def get(self):        
-        payload  = {}
-        headers = {
-            "Authorization": "Bearer " + token_response["accessToken"]
-        }
-        response = requests.request("GET", self.url, headers=headers, data=payload)
-        print(response.text.encode("utf8"))
+        pass
 
     def getStepsFromHtml(self):
         sampleDiagnosis = "https://beta.revtwo.com/session/L9X26twMg3cRTBnvmPkq4KVJbWNCHj?navcode=5cGZd3fFhz"
