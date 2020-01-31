@@ -39,6 +39,7 @@ def authorized():
         return render_template("auth_error.html", result=request.args)
     if request.args.get('code'):
         azureAuth.load_cache(session)
+        azureAuth.build_msal_app()
         result = azureAuth.acquire_token_by_authorization_code(
             request.args['code'],
             url_for("authorized", _external=True))

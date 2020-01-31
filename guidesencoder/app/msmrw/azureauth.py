@@ -7,16 +7,19 @@ except ImportError:
     sys.path.append('.')
     from guidesencoder.config import DevConfig
 
-class AzureAuth:
+class AzureAuth:x
    
     def __init__(self):
        self.cache = msal.SerializableTokenCache()
-       self.confidentialClient = msal.ConfidentialClientApplication(
+       self.confidentialClient = msal.ConfidentialClientApplication(DevConfig.CLIENT_ID)
+    
+    def build_msal_app(self):
+        self.confidentialClient = msal.ConfidentialClientApplication(
             DevConfig.CLIENT_ID, 
             authority=DevConfig.AUTHORITY_MULTI_TENANT,
             client_credential=DevConfig.CLIENT_SECRET, 
             token_cache=self.cache)
-    
+
     def get_auth_url(self, state=None, redirect_uri=None):
         return self.confidentialClient.get_authorization_request_url(
             DevConfig.SCOPE or [],
