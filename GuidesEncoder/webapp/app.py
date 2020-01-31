@@ -38,18 +38,12 @@ def authorized():
         return render_template("auth_error.html", result=request.args)
     if request.args.get('code'):
         cache = _load_cache()
-        # result = _build_msal_app(cache=cache).acquire_token_by_authorization_code(
-        #     request.args['code'],
-        #     scopes=DevConfig.SCOPE,
-        #     redirect_uri=url_for("authorized", _external=True))
-        # if "error" in result:
         result = azureAuth.confidentialClient.acquire_token_by_authorization_code(
             request.args['code'],
             scopes=DevConfig.SCOPE,
             redirect_uri=url_for("authorized", _external=True))
         if "error" in result:
             return render_template("auth_error.html", result=result)
-        # session["user"] = result.get("id_token_claims")
         session["user"] = result.get("id_token_claims")
         _save_cache(cache)
     return redirect(url_for("index"))
@@ -93,33 +87,14 @@ def _load_cache():
     if session.get("token_cache"):
         azureAuth.cache.deserialize(session["token_cache"])
     return azureAuth.cache
-    # cache = msal.SerializableTokenCache()
-    # if session.get("token_cache"):
-    #     azureAuth.cache.deserialize(session["token_cache"])
-    #     cache.deserialize(session["token_cache"])
-    # return cache    
     
 def _save_cache(cache):
     if azureAuth.cache.has_state_changed:
         azureAuth.cache = cache
         session["token_cache"] = azureAuth.cache.serialize()
-    # if cache.has_state_changed:
-        # session["token_cache"] = cache.serialize()
-
-def _build_msal_app(cache=None, authority=None):
-    azureAuth.build_msal_app()
-    # return msal.ConfidentialClientApplication(
-    #     DevConfig.CLIENT_ID, 
-    #     authority=authority or DevConfig.AUTHORITY_MULTI_TENANT,
-    #     client_credential=DevConfig.CLIENT_SECRET, 
-    #     token_cache=cache)
 
 def _build_auth_url(authority=None, scopes=None, state=None):
     return azureAuth.get_auth_url(state, url_for("authorized", _external=True))
-    # return _build_msal_app(authority=authority).get_authorization_request_url(
-    #     scopes or [],
-    #     state=state or str(uuid.uuid4()),
-    #     redirect_uri=url_for("authorized", _external=True))
 
 def _get_token_from_cache(scope=None):
     cache = _load_cache()
@@ -127,12 +102,6 @@ def _get_token_from_cache(scope=None):
         result = azureAuth.confidentialClient.acquire_token_silent(scope, account=azureAuth.confidentialClient.get_accounts()[0])
         _save_cache(cache)
         return result 
-    # cca = _build_msal_app(cache=cache)
-    # accounts = cca.get_accounts()
-    # if accounts:  # So all account(s) belong to the current signed-in user
-    #     result = cca.acquire_token_silent(scope, account=accounts[0])
-    #     _save_cache(cache)
-    #     return result
 
 app.jinja_env.globals.update(_build_auth_url=_build_auth_url) 
 
