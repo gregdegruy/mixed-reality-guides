@@ -7,7 +7,7 @@ except ImportError:
     sys.path.append('.')
     from guidesencoder.config import DevConfig
 
-class AzureAuth:x
+class AzureAuth:
    
     def __init__(self):
        self.cache = msal.SerializableTokenCache()
