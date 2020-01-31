@@ -28,16 +28,25 @@ class AzureAuth:
             authCodeFromServer,
             scopes=DevConfig.SCOPE,
             redirect_uri=redirectUri)
+
+    def get_token_from_cache(self, flaskSession):
+        self.load_cache(flaskSession)
+        if self.confidentialClient.get_accounts():
+            result = self \
+                .confidentialClient \
+                .acquire_token_silent(
+                    DevConfig.SCOPE, 
+                    account=self.confidentialClient.get_accounts()[0]
+                )
+            return result 
     
     def load_cache(self, flaskSession):
         if flaskSession.get("token_cache"):
             self.cache.deserialize(flaskSession["token_cache"])
-        return self.cache
 
-    def save_cache(self, cache):
+    def save_cache(self):
         if self.cache.has_state_changed:
-            self.cache = cache
-        return self.cache.serialize()
+            return self.cache.serialize()
     
     def refreshToken():
         pass

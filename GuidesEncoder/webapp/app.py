@@ -4,14 +4,15 @@ import msal
 import requests
 import uuid
 
-from guidesencoder.config import DevConfig
 
 try:
     from guidesencoder.app.msmrw.azureauth import AzureAuth
+    from guidesencoder.config import DevConfig
 except ImportError:
     import sys
     sys.path.append('.')
     from guidesencoder.app.msmrw.azureauth import AzureAuth
+    from guidesencoder.config import DevConfig
 
 app = Flask(__name__)
 app.config.from_object(DevConfig)
@@ -37,14 +38,14 @@ def authorized():
     if "error" in request.args:
         return render_template("auth_error.html", result=request.args)
     if request.args.get('code'):
-        cache = azureAuth.load_cache(session)
+        azureAuth.load_cache(session)
         result = azureAuth.acquire_token_by_authorization_code(
             request.args['code'],
             url_for("authorized", _external=True))
         if "error" in result:
             return render_template("auth_error.html", result=result)
         session["user"] = result.get("id_token_claims")
-        session["token_cache"] = azureAuth.save_cache(cache)
+        session["token_cache"] = azureAuth.save_cache()
     return redirect(url_for("index"))
 
 @app.route("/logout")
@@ -56,7 +57,8 @@ def logout():
 
 @app.route("/getguide")
 def getGuides():
-    token = _get_token_from_cache(DevConfig.SCOPE)
+    token = azureAuth.get_token_from_cache(session)
+    session["token_cache"] = azureAuth.save_cache()
     if not token:
         return redirect(url_for("login"))    
     graph_data = requests.get(
@@ -67,10 +69,11 @@ def getGuides():
 
 @app.route("/postguide")
 def postGuides():
-    token = _get_token_from_cache(DevConfig.SCOPE)
+    token = azureAuth.get_token_from_cache(session)
+    session["token_cache"] = azureAuth.save_cache()
     if not token:
         return redirect(url_for("login"))    
-    guideNmae = "REST Guide 22"
+    guideNmae = "REST Guide 30"
     payload = "{\r\n    \"msmrw_schemaversion\": 3,\r\n    \"msmrw_name\": \"" + guideNmae + "\",\r\n    \"msmrw_guide_Annotations\": [\r\n    \t{\r\n\t        \"mimetype\": \"application/octet-stream\",\r\n\t\t\t\"isdocument\": true,\r\n\t        \"filename\": \"Name it whatever.json\"\r\n    \t}\r\n\t]\r\n}"
     headers = {
         'Content-Type': 'application/json',
@@ -82,25 +85,8 @@ def postGuides():
         data=payload)
     return render_template('display.html', result=str("Post complete" + graph_data.text))
 
-def _load_cache():
-    if session.get("token_cache"):
-        azureAuth.cache.deserialize(session["token_cache"])
-    return azureAuth.cache
-    
-def _save_cache(cache):
-    if azureAuth.cache.has_state_changed:
-        azureAuth.cache = cache
-        session["token_cache"] = azureAuth.cache.serialize()
-
 def _build_auth_url():
     return azureAuth.get_auth_url(session["state"], url_for("authorized", _external=True))
-
-def _get_token_from_cache(scope=None):
-    cache = _load_cache()
-    if azureAuth.confidentialClient.get_accounts():
-        result = azureAuth.confidentialClient.acquire_token_silent(scope, account=azureAuth.confidentialClient.get_accounts()[0])
-        _save_cache(cache)
-        return result 
 
 app.jinja_env.globals.update(_build_auth_url=_build_auth_url) 
 
