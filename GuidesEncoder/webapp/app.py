@@ -50,7 +50,7 @@ def authorized():
         if "error" in result:
             return render_template("auth_error.html", result=result)
         # session["user"] = result.get("id_token_claims")
-        session["user"] = azureAuth.confidentialClient.get("id_token_claims")
+        session["user"] = result.get("id_token_claims")
         _save_cache(cache)
     return redirect(url_for("index"))
 
