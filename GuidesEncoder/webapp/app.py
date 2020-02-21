@@ -4,20 +4,22 @@ import msal
 import requests
 import uuid
 
-
 try:
     from guidesencoder.app.msmrw.azureauth import AzureAuth
+    from guidesencoder.app.msmrw.guide import Guide
     from guidesencoder.config import DevConfig
 except ImportError:
     import sys
     sys.path.append('.')
     from guidesencoder.app.msmrw.azureauth import AzureAuth
+    from guidesencoder.app.msmrw.guide import Guide
     from guidesencoder.config import DevConfig
 
 app = Flask(__name__)
 app.config.from_object(DevConfig)
 Session(app)
 azureAuth = AzureAuth()
+guide = Guide("PY Guide")
 
 @app.route("/")
 def index():    
@@ -74,7 +76,7 @@ def postGuides():
     session["token_cache"] = azureAuth.save_cache()
     if not token:
         return redirect(url_for("login"))    
-    guideNmae = "REST Guide 30"
+    guideNmae = "PY Guide"
     payload = "{\r\n    \"msmrw_schemaversion\": 3,\r\n    \"msmrw_name\": \"" + guideNmae + "\",\r\n    \"msmrw_guide_Annotations\": [\r\n    \t{\r\n\t        \"mimetype\": \"application/octet-stream\",\r\n\t\t\t\"isdocument\": true,\r\n\t        \"filename\": \"Name it whatever.json\"\r\n    \t}\r\n\t]\r\n}"
     headers = {
         'Content-Type': 'application/json',

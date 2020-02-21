@@ -1,4 +1,4 @@
-{
+  {
   "Schema": "GuidesV3",
   "Guide": {
     "Id": "bfa368fc-a440-ea11-a812-000d3a569653",
@@ -6,16 +6,16 @@
     "Name": "Python Guide",
     "Tasks": [
       {
-        "Id": "4a40165b-bc62-465e-9139-0c8628ec3c70",
+        "Id": "a3a73a95-4f90-4d75-92ac-3c5e963b6b68",
         "Type": "Microsoft.Guides.Schema.IGuideTask",
         "Name": "Manually heat the nozzle to remove the jam ",
         "Steps": [
           {
-            "Id": "d3b1965c-6029-42d8-9580-7fb785df9bcd",
+            "Id": "224f6c78-5c2e-4715-b828-fdac957e2749",
             "Type": "Microsoft.Guides.Schema.IGuideStep",
             "InstructionText": "Select the Menu from the upper right corner of the printer's touch screen.",
             "Tether": {
-              "Id": "895c0c6c-5540-49d5-acd2-daa12d1256a0",
+              "Id": "2ef491a8-71b9-4282-b1d5-8361add23a50",
               "Type": "Microsoft.Guides.Schema.ITether",
               "Transform": {
                 "Position": [
@@ -47,11 +47,11 @@
             "StepMode": 0
           },
           {
-            "Id": "85706915-d8ab-4985-9509-6480ce6962c2",
+            "Id": "bd4ec3ab-ef93-4a34-94c1-aaeef70f77be",
             "Type": "Microsoft.Guides.Schema.IGuideStep",
             "InstructionText": "Select the Utilities tile from the available options.",
             "Tether": {
-              "Id": "b20d1ad2-00d2-47e4-a4f6-b1465df7d87f",
+              "Id": "c108b04a-2e65-4515-94f3-1fe95a10d701",
               "Type": "Microsoft.Guides.Schema.ITether",
               "Transform": {
                 "Position": [
@@ -83,11 +83,11 @@
             "StepMode": 0
           },
           {
-            "Id": "7dfbc9bf-98f6-4771-9d47-9d6c95a5a20f",
+            "Id": "34fb99f9-bcf2-4083-b172-8394e0a526ae",
             "Type": "Microsoft.Guides.Schema.IGuideStep",
             "InstructionText": "Select the Temperature Control tile from the available options.",
             "Tether": {
-              "Id": "df015641-b95a-4709-9543-5ab3f1109e60",
+              "Id": "c63965a7-6579-4d7f-acf2-b184c7aca4b2",
               "Type": "Microsoft.Guides.Schema.ITether",
               "Transform": {
                 "Position": [
@@ -119,11 +119,11 @@
             "StepMode": 0
           },
           {
-            "Id": "2c75f103-7b41-4490-8597-f8ed587ce26c",
+            "Id": "64d1e1ab-80e7-424d-8ce1-88eeb3e0cfb5",
             "Type": "Microsoft.Guides.Schema.IGuideStep",
             "InstructionText": "Select the Heat option on the screen when prompted.",
             "Tether": {
-              "Id": "1a6ee208-7404-4b52-9adb-21f88341b3ea",
+              "Id": "6fe57729-d833-41f7-9976-d277b69a1e54",
               "Type": "Microsoft.Guides.Schema.ITether",
               "Transform": {
                 "Position": [
@@ -155,11 +155,11 @@
             "StepMode": 0
           },
           {
-            "Id": "e72ed7a6-ea23-42d0-82b8-c29d89791a58",
+            "Id": "c8841c20-882d-4baa-a863-a5aa5463f1d6",
             "Type": "Microsoft.Guides.Schema.IGuideStep",
             "InstructionText": "Remove the thumb screw that connects the fiber Bowden tube to the print head.",
             "Tether": {
-              "Id": "953260c8-b987-4f0c-bca8-dce90a3ed027",
+              "Id": "6404670e-116b-4bed-b4e4-09928f359c99",
               "Type": "Microsoft.Guides.Schema.ITether",
               "Transform": {
                 "Position": [
@@ -191,11 +191,11 @@
             "StepMode": 0
           },
           {
-            "Id": "5342f6da-7697-499d-8510-0a341fb66693",
+            "Id": "042426a2-4ef3-4587-b8fe-1797abb08926",
             "Type": "Microsoft.Guides.Schema.IGuideStep",
             "InstructionText": "Look down throught the print head channel to verify that the print head blockage is clear.",
             "Tether": {
-              "Id": "85cc2f67-e23d-4a3b-9b82-d12a0197213f",
+              "Id": "b4bd4e90-ddeb-40ac-9ab4-a6daf76eb18d",
               "Type": "Microsoft.Guides.Schema.ITether",
               "Transform": {
                 "Position": [
@@ -230,7 +230,7 @@
       }
     ],
     "AlignmentStep": {
-      "Id": "23f83a67-78dc-40b7-a30d-b2a295bd9ba2",
+      "Id": "dc30118d-7bcf-484c-bc41-b12010b8e362",
       "Type": "Microsoft.Guides.Schema.IAlignment",
       "InstructionText": "1. Align \"digital anchor\" hologram to a real world object:\n     o Tap and hold the hologram to move\n     o Tap and hold the blue spheres to rotate\n\n2. Select \"Confirm\" when you are done.",
       "Tether": {
@@ -272,7 +272,7 @@
       "AlignmentModelType": 0
     },
     "CompletionStep": {
-      "Id": "0fd2e9c8-060a-4919-a079-849572da9bc2",
+      "Id": "660abac5-e226-432b-b0c0-5783efcac0d8",
       "Type": "Microsoft.Guides.Schema.IGuideStep",
       "InstructionText": "You're done! To finish up please do...",
       "Tether": {

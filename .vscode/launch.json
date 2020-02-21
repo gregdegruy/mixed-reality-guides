@@ -2,14 +2,14 @@
     "version": "0.0.2",
     "configurations": [
         {
-            "name": "Python Console Daemon",
+            "name": "MS Guides Python Console Daemon",
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}/guidesencoder/app/__main__.py",
             "console": "integratedTerminal"
         },
         {
-            "name": "Python: Flask Web App",
+            "name": "MS Guides Python Flask Web App",
             "type": "python",
             "request": "launch",
             "module": "flask",
