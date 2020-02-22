@@ -6,7 +6,7 @@ An API to create Dynamics 365 Guides using Python.
 
 1. [HoloLens Emulator](https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-hololens-emulator)
 2. [Microsoft Guides App](https://www.microsoft.com/en-us/p/microsoft-dynamics-365-guides/9n038fb42kkb)
-3. [Dynamics 365 Trial](https://trials.dynamics.com/) this blog has the [steps]https://community.dynamics.com/crm/b/magnetismsolutionscrmblog/posts/how-to-get-30-day-trial-of-microsoft-dynamics-365-for-free().
+3. [Dynamics 365 Trial](https://trials.dynamics.com/) this blog has the [steps](https://community.dynamics.com/crm/b/magnetismsolutionscrmblog/posts/how-to-get-30-day-trial-of-microsoft-dynamics-365-for-free).
 4. [Microsoft Guides License](https://docs.microsoft.com/en-us/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide)
 5. [Register an application in Azure AD](https://docs.microsoft.com/en-us/skype-sdk/ucwa/registeringyourapplicationinazuread)
 
